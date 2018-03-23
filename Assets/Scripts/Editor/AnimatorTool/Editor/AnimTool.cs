@@ -114,6 +114,8 @@ public class AnimTool
         GameObject go = PrefabUtility.ReplacePrefab(obj, pref);
         if (go.GetComponent<AnimEventWidget>() == null)
             go.AddComponent<AnimEventWidget>();
+        if (go.GetComponent<MoveWidget>() == null)
+            go.AddComponent<MoveWidget>();
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
     }

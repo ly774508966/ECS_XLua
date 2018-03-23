@@ -6263,9 +6263,9 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.1
-    functionName: playAudio
-    data: 20000201
+  - time: 0.05
+    functionName: playHit
+    data: 300001014
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

@@ -29,7 +29,12 @@ function LEntity:playEffect(args)
 end 
 
 function LEntity:playHit(args)
-
+    --local hitConf = {type = 3} --获取hitConfig type 3 位置技能
+    local num = tonumber(args) ~= nil and tonumber(args) or -1
+    local hitConf = ConfigHelper:getConfigByKey('HitConfig',num)
+    if hitConf and hitConf.type == 3 then --工厂类创建打击效果
+       self.csEntity:setMoveArgs(hitConf.distance,hitConf.moveSpeed,hitConf.moveAtt,hitConf.dirType)
+    end 
 end 
 
 function LEntity:enterState(args)

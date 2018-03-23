@@ -21,7 +21,7 @@ namespace XLua.CSObjectWrap
         {
 			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
 			System.Type type = typeof(CEntity);
-			Utils.BeginObjectRegister(type, L, translator, 0, 9, 1, 1);
+			Utils.BeginObjectRegister(type, L, translator, 0, 10, 1, 1);
 			
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "setPlayAudioEvent", _m_setPlayAudioEvent);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "setPlayEffectEvent", _m_setPlayEffectEvent);
@@ -32,6 +32,7 @@ namespace XLua.CSObjectWrap
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "playHit", _m_playHit);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "enterState", _m_enterState);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "OnDestroy", _m_OnDestroy);
+			Utils.RegisterFunc(L, Utils.METHOD_IDX, "setMoveArgs", _m_setMoveArgs);
 			
 			
 			Utils.RegisterFunc(L, Utils.GETTER_IDX, "UID", _g_get_UID);
@@ -321,6 +322,37 @@ namespace XLua.CSObjectWrap
                 {
                     
                     __cl_gen_to_be_invoked.OnDestroy(  );
+                    
+                    
+                    
+                    return 0;
+                }
+                
+            } catch(System.Exception __gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + __gen_e);
+            }
+            
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_setMoveArgs(RealStatePtr L)
+        {
+		    try {
+            
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+                CEntity __cl_gen_to_be_invoked = (CEntity)translator.FastGetCSObj(L, 1);
+            
+            
+                
+                {
+                    float dis = (float)LuaAPI.lua_tonumber(L, 2);
+                    float speed = (float)LuaAPI.lua_tonumber(L, 3);
+                    float att = (float)LuaAPI.lua_tonumber(L, 4);
+                    int dirType = LuaAPI.xlua_tointeger(L, 5);
+                    
+                    __cl_gen_to_be_invoked.setMoveArgs( dis, speed, att, dirType );
                     
                     
                     

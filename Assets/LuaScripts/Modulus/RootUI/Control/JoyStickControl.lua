@@ -50,6 +50,10 @@ function JoyStickControl:checkMainPlayer()
 	if not self.mainPlayer then 
 		return false 
 	end 
+   local state = self.mainPlayer:getActionState()
+   if state ~= 'Stand' and state ~= 'Walk'  then 
+      return false 
+   end 
 	return true 
 end 
 

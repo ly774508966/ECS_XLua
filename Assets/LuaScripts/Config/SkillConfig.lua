@@ -53,7 +53,7 @@ SkillConfig[200041]={id=200041,remark='技能描述',type=2,icon='icon_skill_005
 SkillConfig[200042]={id=200042,remark='技能描述',type=2,icon='icon_skill_0051',name='闪现',cooldown=3,animName='skill1'}
 SkillConfig[200043]={id=200043,remark='技能描述',type=2,icon='icon_skill_0052',name='闪现',cooldown=3,animName='skill2'}
 SkillConfig[200044]={id=200044,remark='技能描述',type=2,icon='icon_skill_0053',name='闪现',cooldown=3,animName='skill3'}
-SkillConfig[300001]={id=300001,remark='技能描述',type=3,icon='icon_skill_0054',name='闪现',cooldown=3,animName='skill1'}
+SkillConfig[300001]={id=300001,remark='技能描述',type=3,icon='icon_skill_0054',name='闪现',cooldown=3,animName='dodge'}
 SkillConfig[300002]={id=300002,remark='技能描述',type=3,icon='icon_skill_0055',name='治疗',cooldown=6,animName='skill2'}
 SkillConfig[300003]={id=300003,remark='技能描述',type=3,icon='icon_skill_0056',name='闪现',cooldown=8,animName='skill3'}
 SkillConfig[300004]={id=300004,remark='技能描述',type=3,icon='icon_skill_0057',name='闪现',cooldown=3,animName='skill1'}

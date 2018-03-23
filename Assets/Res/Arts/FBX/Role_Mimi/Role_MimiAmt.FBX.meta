@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e2d25931091c7d648922e54baa9c2727
-timeCreated: 1521797696
+timeCreated: 1521803949
 licenseType: Pro
 ModelImporter:
   serializedVersion: 22
@@ -624,9 +624,9 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.1
-        functionName: playAudio
-        data: 20000201
+      - time: 0.05
+        functionName: playHit
+        data: 300001014
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0

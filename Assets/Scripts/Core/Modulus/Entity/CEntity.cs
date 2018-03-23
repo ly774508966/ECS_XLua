@@ -87,5 +87,25 @@ public class CEntity : MonoBehaviour
         playHitEvent = null;
     }
 
+
+
+    private MoveWidget moveWidget = null;
+    protected MoveWidget MoveWidget {
+        get {
+            if (moveWidget == null) {
+                moveWidget = this.GetComponentInChildren<MoveWidget>();
+            }
+            return moveWidget;
+        }
+    }
+
+    public void setMoveArgs(float dis, float speed, float att, int dirType)
+    {
+        if (MoveWidget != null) {
+            MoveWidget.setMoveArgs(dis, speed, att, dirType);
+        }
+    }
+
+
 }
 
