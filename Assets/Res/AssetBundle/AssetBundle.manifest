@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 2434726402
+CRC: 768159978
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -171,3 +171,22 @@ AssetBundleManifest:
       Name: materials/ds_skeleton_standard.assetbundle
       Dependencies:
         Dependency_0: textures/ds_skeleton_standard.assetbundle
+    Info_44:
+      Name: animators/role_mimi/ac.assetbundle
+      Dependencies:
+        Dependency_0: animators/role_mimi/clip.assetbundle
+    Info_45:
+      Name: animators/role_mimi/clip.assetbundle
+      Dependencies: {}
+    Info_46:
+      Name: textures/role_mimi.assetbundle
+      Dependencies: {}
+    Info_47:
+      Name: materials/role_mimi.assetbundle
+      Dependencies:
+        Dependency_0: textures/role_mimi.assetbundle
+    Info_48:
+      Name: modelprefabs/role_mimi.assetbundle
+      Dependencies:
+        Dependency_0: animators/role_mimi/ac.assetbundle
+        Dependency_1: materials/role_mimi.assetbundle

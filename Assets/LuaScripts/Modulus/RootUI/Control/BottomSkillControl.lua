@@ -21,8 +21,10 @@ end
 
 function BottomSkillControl:onCastSkill(id)
    local player = EntityMgr:getMainEntity()
-   if player then 
+   if player and player:getActionState() == 'Stand' then 
    	  player:updateComp(LCompType.Skill,id)
+   else
+      print("正在释放其他技能中")
    end 
 end 
 

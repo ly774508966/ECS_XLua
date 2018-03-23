@@ -156,6 +156,7 @@ public class AnimTool
             tempClip.lastFrame = clips[i].endIndex;
             tempClip.loopTime = clips[i].isLoop;
             tempClip.wrapMode = clips[i].isLoop ? WrapMode.Loop : WrapMode.Default;
+            tempClip.loopPose = true;
             if (events.ContainsKey(tempClip.name))
             {
                 animEventTotal total = events[tempClip.name];
@@ -269,7 +270,7 @@ public class AnimTool
         int startX = 0;
         AnimatorState animState = null;
         for (int i = 0; i < clips.Count; i++)
-        {           
+        {
             string name = clips[i].name;       
             bool isStand = name == defaultAnim;
             startY = isStand ? startY : startY + 1;
@@ -307,6 +308,9 @@ public class AnimTool
                     AnimatorStateTransition trans = currState.state.AddTransition(toState.state);
                     if (cond.toCond == "None")
                     {
+                        trans.hasExitTime = false;
+                    }
+                    else if (cond.toCond == "Exit") {
                         trans.hasExitTime = true;
                     }
                     else
@@ -360,7 +364,7 @@ public class AnimTool
             cond.fromState = vals[2] == "0" ? "Any State" : vals[2];
             cond.fromCond = vals[3];
             cond.toState = vals[4] == "0" ? defaultAnim : vals[4];
-            cond.toCond = vals[5] == "0" ? "None" : vals[5];
+            cond.toCond = vals[5] == "0" ? "Exit" : vals[5] == "1"? "None" : vals[5];
             conds.Add(cond.clipName, cond);
         }
     }

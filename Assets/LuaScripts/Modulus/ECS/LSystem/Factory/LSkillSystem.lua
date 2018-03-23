@@ -12,7 +12,7 @@ function LSkillSystem:onUpdate(lst)
     for k,v in pairs(lst) do 
         local isNeed = v:isNeedUpdate()
         if isNeed then            
-           local entity = EntityMgr:getEntity(v:getUid())
+           local entity = EntityMgr:getEntity(v:getUid())           
            if entity then 
                local skillConf = ConfigHelper:getConfigByKey('SkillConfig',v.castQueue)
                if skillConf then 

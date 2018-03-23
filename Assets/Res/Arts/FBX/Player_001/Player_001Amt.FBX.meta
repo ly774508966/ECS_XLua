@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f968d01a78ab1cb4ab350d961ccbde8b
-timeCreated: 1521775252
+timeCreated: 1521794721
 licenseType: Pro
 ModelImporter:
   serializedVersion: 22
@@ -329,7 +329,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Skill1
       takeName: 
-      firstFrame: 20
+      firstFrame: 2
       lastFrame: 30
       wrapMode: 0
       orientationOffsetY: 0
@@ -378,7 +378,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Skill2
       takeName: 
-      firstFrame: 30
+      firstFrame: 2
       lastFrame: 40
       wrapMode: 0
       orientationOffsetY: 0
@@ -427,7 +427,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Skill3
       takeName: 
-      firstFrame: 30
+      firstFrame: 2
       lastFrame: 40
       wrapMode: 0
       orientationOffsetY: 0

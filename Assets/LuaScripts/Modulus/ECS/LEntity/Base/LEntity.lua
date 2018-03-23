@@ -12,6 +12,7 @@ function LEntity:__init_self()
 	self.data = nil --实体配置
 	self.root = nil --实体obj根节点
   self.csEntity = nil --CEntity  
+  self.actionState = 'Stand'
   self.audioListener = Bind(self.playAudio,self)
   self.effectListener = Bind(self.playEffect,self)
   self.hitListener = Bind(self.playHit,self)
@@ -20,7 +21,7 @@ function LEntity:__init_self()
 end 
 
 function LEntity:playAudio(args)
-  print("cs call lua animator event playAudio args "..tostring(args))
+   
 end 
 
 function LEntity:playEffect(args)
@@ -32,7 +33,15 @@ function LEntity:playHit(args)
 end 
 
 function LEntity:enterState(args)
+   if self.actionState ~= tostring(args) then 
+      self.actionState = tostring(args)
+      print("<color=red>action state : </color>"..tostring(self.actionState))
+   end 
 
+end 
+
+function LEntity:getActionState()
+  return self.actionState
 end 
 
 function LEntity:onLoading()	
