@@ -21,14 +21,16 @@ namespace XLua.CSObjectWrap
         {
 			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
 			System.Type type = typeof(CEntity);
-			Utils.BeginObjectRegister(type, L, translator, 0, 7, 1, 1);
+			Utils.BeginObjectRegister(type, L, translator, 0, 9, 1, 1);
 			
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "setPlayAudioEvent", _m_setPlayAudioEvent);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "setPlayEffectEvent", _m_setPlayEffectEvent);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "setPlayHitEvent", _m_setPlayHitEvent);
+			Utils.RegisterFunc(L, Utils.METHOD_IDX, "setEnterStateEvent", _m_setEnterStateEvent);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "playAudio", _m_playAudio);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "playEffect", _m_playEffect);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "playHit", _m_playHit);
+			Utils.RegisterFunc(L, Utils.METHOD_IDX, "enterState", _m_enterState);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "OnDestroy", _m_OnDestroy);
 			
 			
@@ -165,6 +167,34 @@ namespace XLua.CSObjectWrap
         }
         
         [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_setEnterStateEvent(RealStatePtr L)
+        {
+		    try {
+            
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+                CEntity __cl_gen_to_be_invoked = (CEntity)translator.FastGetCSObj(L, 1);
+            
+            
+                
+                {
+                    System.Action<string> foo = translator.GetDelegate<System.Action<string>>(L, 2);
+                    
+                    __cl_gen_to_be_invoked.setEnterStateEvent( foo );
+                    
+                    
+                    
+                    return 0;
+                }
+                
+            } catch(System.Exception __gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + __gen_e);
+            }
+            
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
         static int _m_playAudio(RealStatePtr L)
         {
 		    try {
@@ -236,6 +266,34 @@ namespace XLua.CSObjectWrap
                     string args = LuaAPI.lua_tostring(L, 2);
                     
                     __cl_gen_to_be_invoked.playHit( args );
+                    
+                    
+                    
+                    return 0;
+                }
+                
+            } catch(System.Exception __gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + __gen_e);
+            }
+            
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_enterState(RealStatePtr L)
+        {
+		    try {
+            
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+                CEntity __cl_gen_to_be_invoked = (CEntity)translator.FastGetCSObj(L, 1);
+            
+            
+                
+                {
+                    string args = LuaAPI.lua_tostring(L, 2);
+                    
+                    __cl_gen_to_be_invoked.enterState( args );
                     
                     
                     

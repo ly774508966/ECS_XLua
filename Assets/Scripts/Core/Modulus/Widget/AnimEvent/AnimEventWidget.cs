@@ -38,4 +38,13 @@ public class AnimEventWidget : MonoBehaviour {
         }
     }
 
+
+    public virtual void enterState(string args)
+    {
+        if (Agent != null)
+        {
+            Agent.enterState(args);
+        }
+    }
+
 }

@@ -55,8 +55,7 @@ public class AnimTool
     private const string condSuff = "AnimCond.xlsx";//动画状态机条件excel后缀
     private const string eventSuff = "AnimEvent.xlsx";//帧事件excel后缀
 
-    private const string clipPath = "Assets/Res/Arts/AnimClips";//导出动画切片
-    private const string acPath = "Assets/Res/Arts/Animators";//导出animactorControl路径
+   private const string animPath = "Assets/Res/Arts/Animators/";//存放预设路径
     private const string prefabPath = "Assets/Res/Arts/Prefabs/ModelPrefabs/";//存放预设路径
 
     private const string animSuff = "Amt";
@@ -78,11 +77,10 @@ public class AnimTool
         string clipPath = Path.Combine(fbxPath, objName + "/" + objName + clipSuff);
         string condPath = Path.Combine(fbxPath, objName + "/" + objName + condSuff);
         string eventPath = Path.Combine(fbxPath, objName + "/" + objName + eventSuff);
-        Debug.Log(clipPath);
         //切片信息
         List<animClip> clips = new List<animClip>();
         getClips(clipPath, ref clips);
-        createCilp(objPath, eventPath, clips);
+        createCilp(objName,objPath, eventPath, clips);
 
         //ac信息
         Dictionary<string, animCond> conds = new Dictionary<string, animCond>();
@@ -97,12 +95,11 @@ public class AnimTool
     private static void createPrefabs(string objPath, string objName)
     {
         string resPath = objPath.Replace("Amt", "");
-        int index = objPath.LastIndexOf("/");
-        string root = objPath.Remove(index);
-        string acPath = Path.Combine(root, "bin/ac/" + objName + ".controller");
+        string acPath = getAnimPathByName(objName, "ac");
+        acPath = Path.Combine(acPath, objName + ".controller");
         if (!Directory.Exists(prefabPath)) Directory.CreateDirectory(prefabPath);
-
-        GameObject obj = AssetDatabase.LoadAssetAtPath(resPath + ".prefab", typeof(UnityEngine.GameObject)) as GameObject;
+        GameObject obj = AssetDatabase.LoadAssetAtPath(resPath+".FBX", typeof(UnityEngine.GameObject)) as GameObject;
+        //GameObject obj = AssetDatabase.LoadAssetAtPath(resPath + ".prefab", typeof(UnityEngine.GameObject)) as GameObject;
         if (obj == null)
         {
             Debug.LogError("模型预设资源不存在: " + resPath);
@@ -122,19 +119,27 @@ public class AnimTool
     }
     #endregion
 
+
+    private static string getAnimPathByName(string objName,string suff) {
+        string prePath = Path.Combine(animPath, objName );
+        if (!Directory.Exists(prePath)) {
+            Directory.CreateDirectory(prePath);
+        }
+        string path = Path.Combine(prePath, suff);
+        if (!Directory.Exists(path))
+        {
+            Directory.CreateDirectory(path);
+        }
+        return path;
+    }
     #region 创建动画切片
-    private static void createCilp(string objPath, string eventPath, List<animClip> clips)
+    private static void createCilp(string objName,string objPath, string eventPath, List<animClip> clips)
     {
         string path = objPath + ".FBX";
         var modelImporter = AssetImporter.GetAtPath(path) as ModelImporter;
         if (modelImporter == null) return;
-
-        int index = objPath.LastIndexOf("/");
-        string savePath = objPath.Remove(index);
-        savePath = Path.Combine(savePath, "bin/clip");
-        if (Directory.Exists(savePath)) Directory.Delete(savePath,true);
-        if (!Directory.Exists(savePath)) Directory.CreateDirectory(savePath);
-
+        string savePath = getAnimPathByName(objName, "clip");
+     
         //帧事件信息
         Dictionary<string, animEventTotal> events = new Dictionary<string, animEventTotal>();
         getEvent(eventPath, ref events);
@@ -213,8 +218,14 @@ public class AnimTool
             List<string> vals = item.Value;
             animEventTotal allEvent = new animEventTotal();
             addEvent(vals, 1, ref allEvent);
+            animEvent enterEvent = new animEvent();
+            enterEvent.clipName = vals[0];
+            enterEvent.eventName = "enterState";
+            enterEvent.frame = 0;
+            enterEvent.args = vals[0];
+            allEvent.eventLst.Add(enterEvent);
             events.Add(vals[0], allEvent);
-        }
+        }       
     }
     //递归查找excel里面的帧事件
     private static void addEvent(List<string> vals, int index, ref animEventTotal allEvent)
@@ -233,27 +244,21 @@ public class AnimTool
     }
     #endregion
 
-    #region 创建animatorContorller
+    #region 创建animatorContorller 备注：clip和ac都保存到打包ab目录下
     private static void createAC(string objPath, string objName, Dictionary<string, animCond> conds)
     {
         int index = objPath.LastIndexOf("/");
-        string savePath = objPath.Remove(index);
-        string clipPath = Path.Combine(savePath, "bin/clip");
-        savePath = Path.Combine(savePath, "bin/ac");
-        if (!Directory.Exists(savePath))
-        {
-            Directory.CreateDirectory(savePath);
-        }
-        AnimatorController ac = new AnimatorController();
-        AnimatorControllerLayer layer = new AnimatorControllerLayer();
-        layer.name = "Base";
+        string savePath = getAnimPathByName(objName, "ac");
+        string clipPath = getAnimPathByName(objName, "clip");
+        AnimatorController ac = AnimatorController.CreateAnimatorControllerAtPath(Path.Combine(savePath, objName + ".controller"));
+        AnimatorControllerLayer layer = ac.layers[0];
         //添加clip        
-        AnimatorStateMachine stateMachine = new AnimatorStateMachine();
+        AnimatorStateMachine stateMachine = layer.stateMachine;
         string[] files = Directory.GetFiles(clipPath, "*anim");
-        List<AnimationClip> clips = new List<AnimationClip>();
+        List<Motion> clips = new List<Motion>();
         for (int i = 0; i < files.Length; i++)
         {
-            AnimationClip cp = AssetDatabase.LoadAssetAtPath<AnimationClip>(files[i]);
+            Motion cp = AssetDatabase.LoadAssetAtPath<Motion>(files[i]);
             if (cp != null)
             {
                 clips.Add(cp);
@@ -262,12 +267,10 @@ public class AnimTool
         int startY = 0;
         bool isLeft = false;
         int startX = 0;
+        AnimatorState animState = null;
         for (int i = 0; i < clips.Count; i++)
-        {
-            AnimatorState animState = new AnimatorState();
-            animState.motion = clips[i] as AnimationClip;
-            string name = clips[i].name;
-            animState.name = name;
+        {           
+            string name = clips[i].name;       
             bool isStand = name == defaultAnim;
             startY = isStand ? startY : startY + 1;
             if (!isStand)
@@ -275,7 +278,8 @@ public class AnimTool
                 startX = 430;// isLeft ? 430 + 100 : 430 - 100;
                 isLeft = !isLeft;
             }
-            stateMachine.AddState(animState, isStand ? new Vector2(430, 0) : new Vector2(startX, startY * 100));
+            animState = stateMachine.AddState(name, isStand ? new Vector2(600, 0) : new Vector2(startX, startY * 100));
+            animState.motion = clips[i];
             if (isStand)
                 stateMachine.defaultState = animState;
         }
@@ -294,7 +298,7 @@ public class AnimTool
                     AnimatorStateTransition trans = stateMachine.AddAnyStateTransition(currState.state);
                     if (!isExitParam(ac, cond.fromCond))
                         ac.AddParameter(cond.fromCond, AnimatorControllerParameterType.Trigger);
-                    trans.AddCondition(AnimatorConditionMode.Equals, 0, cond.fromCond);
+                    trans.AddCondition(AnimatorConditionMode.If, 0, cond.fromCond);
                 }
                 string toStateName = cond.toState;
                 ChildAnimatorState toState = getState(states, toStateName);
@@ -309,16 +313,15 @@ public class AnimTool
                     {
                         if (!isExitParam(ac, cond.toCond))
                             ac.AddParameter(cond.toCond, AnimatorControllerParameterType.Trigger);
-                        trans.AddCondition(AnimatorConditionMode.Equals, 0, cond.toCond);
+                        trans.AddCondition(AnimatorConditionMode.If, 0, cond.toCond);
                     }
                 }
             }
         }
-
-        layer.stateMachine = stateMachine;
-        ac.AddLayer(layer);
         ac.name = objName;
-        AssetDatabase.CreateAsset(ac, Path.Combine(savePath, objName + ".controller"));
+        //AssetDatabase.CreateAsset(ac, Path.Combine(savePath, objName + ".controller"));
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
     }
 
     private static bool isExitParam(AnimatorController ac, string name)

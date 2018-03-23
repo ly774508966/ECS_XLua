@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3270783315
+CRC: 888962441
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 27ce50c1a0b6e1504790be2c86bd7ae9
+    Hash: f6733696e5da6b2346a1341834dac493
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 3932c54b6249c9ca1fa7ff84c88ddec5
+    Hash: d2d06f6caa354e2eca065a55b4d2fe17
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -17,17 +17,11 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 23
   Script: {instanceID: 0}
-- Class: 28
-  Script: {instanceID: 0}
 - Class: 33
   Script: {instanceID: 0}
 - Class: 43
   Script: {instanceID: 0}
-- Class: 48
-  Script: {instanceID: 0}
 - Class: 90
-  Script: {instanceID: 0}
-- Class: 91
   Script: {instanceID: 0}
 - Class: 95
   Script: {instanceID: 0}
@@ -36,4 +30,5 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/ModelPrefabs/Player_004.prefab
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/animators/acplayer__001.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ds_equipment_standard.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ds_skeleton_standard.assetbundle

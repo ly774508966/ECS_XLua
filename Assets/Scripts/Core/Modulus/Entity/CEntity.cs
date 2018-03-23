@@ -23,6 +23,7 @@ public class CEntity : MonoBehaviour
     private Action<string> playAudioEvent = null;
     private Action<string> playEffectEvent = null;
     private Action<string> playHitEvent = null;
+    private Action<string> enterStateEvent = null;
 
     /// <summary>
     /// 由Lua调用
@@ -39,6 +40,10 @@ public class CEntity : MonoBehaviour
     public void setPlayHitEvent(Action<string> foo)
     {
         playHitEvent = foo;
+    }
+    public void setEnterStateEvent(Action<string> foo)
+    {
+        enterStateEvent = foo;
     }
 
     /// <summary>
@@ -67,7 +72,13 @@ public class CEntity : MonoBehaviour
             playHitEvent(args);
         }
     }
-
+    public virtual void enterState(string args)
+    {
+        if (enterStateEvent != null)
+        {
+            enterStateEvent(args);
+        }
+    }   
 
     public void OnDestroy()
     {

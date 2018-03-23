@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1713433424
+CRC: 1129527396
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: dc89db8512b1d619907aa7aa2f01ded7
+    Hash: f758eca17aac68bf73be32c89635f5e5
   TypeTreeHash:
     serializedVersion: 2
-    Hash: eb433a1dd3890210545c30a0862c467f
+    Hash: 05ccea70c2318bb82f29470f86f7942a
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -17,16 +17,14 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 23
   Script: {instanceID: 0}
-- Class: 28
-  Script: {instanceID: 0}
 - Class: 33
   Script: {instanceID: 0}
 - Class: 43
-  Script: {instanceID: 0}
-- Class: 48
   Script: {instanceID: 0}
 - Class: 137
   Script: {instanceID: 0}
 Assets:
 - Assets/Res/Arts/Prefabs/ModelPrefabs/Player_002_hunter.prefab
-Dependencies: []
+Dependencies:
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ds_equipment_standard.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ds_skeleton_standard.assetbundle

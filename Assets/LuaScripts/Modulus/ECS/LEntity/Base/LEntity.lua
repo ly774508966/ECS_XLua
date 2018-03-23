@@ -15,15 +15,24 @@ function LEntity:__init_self()
   self.audioListener = Bind(self.playAudio,self)
   self.effectListener = Bind(self.playEffect,self)
   self.hitListener = Bind(self.playHit,self)
+  self.enterStateListener = Bind(self.enterState,self)
   self.compPool = { }
 end 
 
 function LEntity:playAudio(args)
   print("cs call lua animator event playAudio args "..tostring(args))
 end 
+
 function LEntity:playEffect(args)
+
 end 
+
 function LEntity:playHit(args)
+
+end 
+
+function LEntity:enterState(args)
+
 end 
 
 function LEntity:onLoading()	
@@ -33,6 +42,7 @@ function LEntity:onLoading()
   self.csEntity:setPlayAudioEvent(self.audioListener)
   self.csEntity:setPlayEffectEvent(self.effectListener)
   self.csEntity:setPlayHitEvent(self.hitListener)
+  self.csEntity:setEnterStateEvent(self.enterStateListener)  
   --add component
   local lst = self.data:getCompLst()
   if lst then 
@@ -64,6 +74,7 @@ function LEntity:onDispose()
   self.audioListener = nil 
   self.effectListener = nil 
   self.hitListener = nil 
+  self.enterStateListener = nil 
 end 
 
 function LEntity:updateComp(type,...)

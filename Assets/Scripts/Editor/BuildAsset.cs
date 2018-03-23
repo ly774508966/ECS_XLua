@@ -70,10 +70,11 @@ public class BuildAsset
         Stopwatch watch = new Stopwatch();
         watch.Start();
         markResDirectory(atlasPath, ".png", true);
+        markResDirectory(animator, new List<string> { ".controller" }, true);
+        markResDirectory(animator, new List<string> { ".anim" }, true);        
         markRes(texturesPath, ".png");
         markRes(materialPath, ".mat");
         markRes(shaderPath, ".shader");
-        markRes(animator, ".controller");
         markFloder(prefabsPath, ".prefab");
         BuildABs();
         watch.Stop();
@@ -92,6 +93,21 @@ public class BuildAsset
             for (int i = 0; i < dirs.Length; i++)
             {
                 markRes(dirs[i], suff, isAll);
+            }
+        }
+    }
+    static private void markResDirectory(string path, List<string> suffs, bool isAll = false)
+    {
+        if (Directory.Exists(path))
+        {
+            string[] dirs = Directory.GetDirectories(path);
+            for (int i = 0; i < dirs.Length; i++)
+            {                
+                for (int k = 0; k < suffs.Count; k++)
+                {
+                    markRes(dirs[i], suffs[k], isAll);
+                }
+                markResDirectory(dirs[i], suffs, isAll);
             }
         }
     }

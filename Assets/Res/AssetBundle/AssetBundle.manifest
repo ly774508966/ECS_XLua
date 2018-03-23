@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1678566208
+CRC: 2434726402
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -66,14 +66,20 @@ AssetBundleManifest:
       Dependencies: {}
     Info_20:
       Name: modelprefabs/player_002_hunter.assetbundle
-      Dependencies: {}
+      Dependencies:
+        Dependency_0: materials/ds_equipment_standard.assetbundle
+        Dependency_1: materials/ds_skeleton_standard.assetbundle
     Info_21:
       Name: modelprefabs/player_001.assetbundle
-      Dependencies: {}
+      Dependencies:
+        Dependency_0: animators/player_001/ac.assetbundle
+        Dependency_1: materials/ds_equipment_standard.assetbundle
+        Dependency_2: materials/ds_skeleton_standard.assetbundle
     Info_22:
       Name: modelprefabs/player_003.assetbundle
       Dependencies:
-        Dependency_0: animators/acplayer__001.assetbundle
+        Dependency_0: materials/ds_equipment_standard.assetbundle
+        Dependency_1: materials/ds_skeleton_standard.assetbundle
     Info_23:
       Name: materials/uienergy.assetbundle
       Dependencies: {}
@@ -88,7 +94,8 @@ AssetBundleManifest:
     Info_25:
       Name: modelprefabs/player_004.assetbundle
       Dependencies:
-        Dependency_0: animators/acplayer__001.assetbundle
+        Dependency_0: materials/ds_equipment_standard.assetbundle
+        Dependency_1: materials/ds_skeleton_standard.assetbundle
     Info_26:
       Name: uiprefabs/facebookui.assetbundle
       Dependencies:
@@ -119,7 +126,8 @@ AssetBundleManifest:
     Info_32:
       Name: modelprefabs/player_005.assetbundle
       Dependencies:
-        Dependency_0: animators/acplayer__001.assetbundle
+        Dependency_0: materials/ds_equipment_standard.assetbundle
+        Dependency_1: materials/ds_skeleton_standard.assetbundle
     Info_33:
       Name: uiprefabs/guildui.assetbundle
       Dependencies:
@@ -136,13 +144,30 @@ AssetBundleManifest:
     Info_36:
       Name: modelprefabs/player_002.assetbundle
       Dependencies:
-        Dependency_0: animators/acplayer__001.assetbundle
+        Dependency_0: materials/ds_equipment_standard.assetbundle
+        Dependency_1: materials/ds_skeleton_standard.assetbundle
     Info_37:
-      Name: animators/acplayer__001.assetbundle
-      Dependencies: {}
-    Info_38:
       Name: textures/ground.assetbundle
       Dependencies: {}
-    Info_39:
+    Info_38:
       Name: modelprefabs/onehand.assetbundle
+      Dependencies:
+        Dependency_0: materials/ds_equipment_standard.assetbundle
+        Dependency_1: materials/ds_skeleton_standard.assetbundle
+    Info_39:
+      Name: animators/player_001/ac.assetbundle
+      Dependencies:
+        Dependency_0: animators/player_001/clip.assetbundle
+    Info_40:
+      Name: animators/player_001/clip.assetbundle
       Dependencies: {}
+    Info_41:
+      Name: textures/ds_skeleton_standard.assetbundle
+      Dependencies: {}
+    Info_42:
+      Name: materials/ds_equipment_standard.assetbundle
+      Dependencies: {}
+    Info_43:
+      Name: materials/ds_skeleton_standard.assetbundle
+      Dependencies:
+        Dependency_0: textures/ds_skeleton_standard.assetbundle
