@@ -100,3 +100,8 @@ end
 function LEntity:getComp(type)
   return self.compPool[type]
 end 
+
+function LEntity:canCastSkill()
+  local state = self:getActionState()
+  return state == 'Stand' or state == 'Walk' or state == 'Run'
+end 

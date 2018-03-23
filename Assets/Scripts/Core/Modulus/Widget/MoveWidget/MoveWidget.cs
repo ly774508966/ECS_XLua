@@ -35,6 +35,15 @@ public class MoveWidget:MonoBehaviour
         moveDir = getDir(dirType);        
     }
 
+    public void simpleMove(float speed)
+    {
+        //计算出时间
+        moveSpeed = speed;
+        moveAtt = 0;
+        moveDir = this.transform.forward;
+        moveTimer = 10;
+    }
+
     private void Update()
     {
         if (moveTimer <= 0) return;

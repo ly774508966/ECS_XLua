@@ -2,6 +2,7 @@ JoyStickControl = SimpleClass(BaseControl)
 
 local maxSpeed = 100--最大速度 
 local subSpeed = 10--做一个衰减
+local realMax = maxSpeed/subSpeed
 function JoyStickControl:__init(...)
 
 end 
@@ -26,22 +27,35 @@ function JoyStickControl:onDrag(dir)
    	  --与Vector3(0,1,0)夹角   	  
    	  local angle = LuaExtend:getVectorAngle(dir,Vector2(0,1))
    	  angle = dir.x>0 and angle or 360 - angle   	  
-   	  self.mainPlayer:updateComp(LCompType.Rotation,angle)
+   	  self.mainPlayer:updateComp(LCompType.Rotation,angle)             
+        if self.mainPlayer then 
+            local animComp = self.mainPlayer:getComp(LCompType.Animator)
+            if animComp and animComp.anim then 
+               animComp.anim:SetFloat('tree',speed/realMax)
+            end
+        end  
    end 
 end 
 
 function JoyStickControl:onEndDrag()
    if self:checkMainPlayer() then 
    	  self.mainPlayer:updateComp(LCompType.Speed,0)
-  	   self.mainPlayer:updateComp(LCompType.Animator,'idle')
-	  
+  	     self.mainPlayer:updateComp(LCompType.Animator,'idle')
+        LuaExtend:doFloatTo(function(val) 
+           if self.mainPlayer then 
+               local animComp = self.mainPlayer:getComp(LCompType.Animator)
+               if animComp and animComp.anim then 
+                  animComp.anim:SetFloat('tree',val)
+               end
+           end 
+        end,0.5,0,0.5) 
    	  --self.mainPlayer:updateComp(LCompType.Rotation,angle)
    end 	
 end 
 
 function JoyStickControl:onBeginDrag()
    if self:checkMainPlayer() then 
-   	  self.mainPlayer:updateComp(LCompType.Animator,'walk')
+   	  --self.mainPlayer:updateComp(LCompType.Animator,'walk')
    end 	
 end 
 
@@ -51,7 +65,7 @@ function JoyStickControl:checkMainPlayer()
 		return false 
 	end 
    local state = self.mainPlayer:getActionState()
-   if state ~= 'Stand' and state ~= 'Walk'  then 
+   if state ~= 'Stand' and state ~= 'Walk' and state ~= 'Run' then 
       return false 
    end 
 	return true 

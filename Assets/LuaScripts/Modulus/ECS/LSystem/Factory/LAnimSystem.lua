@@ -26,6 +26,7 @@ function LAnimSystem:onUpdate(lst)
              if entity then 
                   local animComp = entity:getComp(LCompType.Animator)
                   if animComp and animComp.anim then 
+                    print("animComp.triggerName "..animComp.triggerName)
                      animComp.anim:SetTrigger(animComp.triggerName)
                      animComp.animChaned = false 
                   end

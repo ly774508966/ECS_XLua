@@ -107,5 +107,13 @@ public class CEntity : MonoBehaviour
     }
 
 
+    public void simpleMove(float speed)
+    {
+        if (MoveWidget != null)
+        {
+            MoveWidget.simpleMove(speed);
+        }
+    }
+
 }
 

@@ -41,6 +41,7 @@ public class MainCameraWidget : MonoBehaviour
         {
             return;
         }
+
         if (shakeTime > 0)
         {
             float del = Time.deltaTime;
@@ -67,8 +68,9 @@ public class MainCameraWidget : MonoBehaviour
         //  rotOffset.y = followPlayer.transform.eulerAngles.y;
         rot = Quaternion.identity * Quaternion.Euler(rotOffset);
 
-        this.transform.position = Vector3.Lerp(Camera.main.transform.position, v3, 0.3f);
-        this.transform.rotation = Quaternion.Lerp(Camera.main.transform.rotation, rot, 0.3f);
+        this.transform.position = Vector3.Lerp(this.transform.position, v3, 0.75f);
+        this.transform.rotation = Quaternion.Lerp(this.transform.rotation, rot, 0.75f);
+
     }
 
     private int getShakeRandom()

@@ -20,8 +20,8 @@ function BottomSkillControl:initEvent()
 end 
 
 function BottomSkillControl:onCastSkill(id)
-   local player = EntityMgr:getMainEntity()
-   if player and player:getActionState() == 'Stand' then 
+   local player = EntityMgr:getMainEntity()   
+   if player and player:canCastSkill() then 
    	  player:updateComp(LCompType.Skill,id)
    else
       print("正在释放其他技能中")

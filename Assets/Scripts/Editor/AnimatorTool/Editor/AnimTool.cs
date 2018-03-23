@@ -16,6 +16,7 @@ public struct animClip
     public int startIndex;
     public int endIndex;
     public bool isLoop;
+    public int blendIndex;
 }
 
 //帧事件
@@ -55,7 +56,7 @@ public class AnimTool
     private const string condSuff = "AnimCond.xlsx";//动画状态机条件excel后缀
     private const string eventSuff = "AnimEvent.xlsx";//帧事件excel后缀
 
-   private const string animPath = "Assets/Res/Arts/Animators/";//存放预设路径
+    private const string animPath = "Assets/Res/Arts/Animators/";//存放预设路径
     private const string prefabPath = "Assets/Res/Arts/Prefabs/ModelPrefabs/";//存放预设路径
 
     private const string animSuff = "Amt";
@@ -80,12 +81,12 @@ public class AnimTool
         //切片信息
         List<animClip> clips = new List<animClip>();
         getClips(clipPath, ref clips);
-        createCilp(objName,objPath, eventPath, clips);
+        createCilp(objName, objPath, eventPath, clips);
 
         //ac信息
         Dictionary<string, animCond> conds = new Dictionary<string, animCond>();
         getCond(condPath, ref conds);
-        createAC(objPath, objName, conds);
+        createAC(objPath, objName, conds, clips);
 
         //保存prefabs
         createPrefabs(objPath, objName);
@@ -98,7 +99,7 @@ public class AnimTool
         string acPath = getAnimPathByName(objName, "ac");
         acPath = Path.Combine(acPath, objName + ".controller");
         if (!Directory.Exists(prefabPath)) Directory.CreateDirectory(prefabPath);
-        GameObject obj = AssetDatabase.LoadAssetAtPath(resPath+".FBX", typeof(UnityEngine.GameObject)) as GameObject;
+        GameObject obj = AssetDatabase.LoadAssetAtPath(resPath + ".FBX", typeof(UnityEngine.GameObject)) as GameObject;
         //GameObject obj = AssetDatabase.LoadAssetAtPath(resPath + ".prefab", typeof(UnityEngine.GameObject)) as GameObject;
         if (obj == null)
         {
@@ -122,9 +123,11 @@ public class AnimTool
     #endregion
 
 
-    private static string getAnimPathByName(string objName,string suff) {
-        string prePath = Path.Combine(animPath, objName );
-        if (!Directory.Exists(prePath)) {
+    private static string getAnimPathByName(string objName, string suff)
+    {
+        string prePath = Path.Combine(animPath, objName);
+        if (!Directory.Exists(prePath))
+        {
             Directory.CreateDirectory(prePath);
         }
         string path = Path.Combine(prePath, suff);
@@ -135,13 +138,13 @@ public class AnimTool
         return path;
     }
     #region 创建动画切片
-    private static void createCilp(string objName,string objPath, string eventPath, List<animClip> clips)
+    private static void createCilp(string objName, string objPath, string eventPath, List<animClip> clips)
     {
         string path = objPath + ".FBX";
         var modelImporter = AssetImporter.GetAtPath(path) as ModelImporter;
         if (modelImporter == null) return;
         string savePath = getAnimPathByName(objName, "clip");
-     
+
         //帧事件信息
         Dictionary<string, animEventTotal> events = new Dictionary<string, animEventTotal>();
         getEvent(eventPath, ref events);
@@ -206,6 +209,7 @@ public class AnimTool
             clip.startIndex = int.Parse(vals[2]);
             clip.endIndex = int.Parse(vals[3]);
             clip.isLoop = vals[4] == "1";
+            clip.blendIndex = int.Parse(vals[5]);
             clips.Add(clip);
         }
     }
@@ -228,7 +232,7 @@ public class AnimTool
             enterEvent.args = vals[0];
             allEvent.eventLst.Add(enterEvent);
             events.Add(vals[0], allEvent);
-        }       
+        }
     }
     //递归查找excel里面的帧事件
     private static void addEvent(List<string> vals, int index, ref animEventTotal allEvent)
@@ -248,8 +252,17 @@ public class AnimTool
     #endregion
 
     #region 创建animatorContorller 备注：clip和ac都保存到打包ab目录下
-    private static void createAC(string objPath, string objName, Dictionary<string, animCond> conds)
+    private static void createAC(string objPath, string objName, Dictionary<string, animCond> conds, List<animClip> lstInfo)
     {
+        //查找混合树
+        List<animClip> blendInfo = new List<animClip>();
+        for (int i = 0; i < lstInfo.Count; i++)
+        {
+            if (lstInfo[i].blendIndex > 0)
+            {
+                blendInfo.Add(lstInfo[i]);
+            }
+        }
         int index = objPath.LastIndexOf("/");
         string savePath = getAnimPathByName(objName, "ac");
         string clipPath = getAnimPathByName(objName, "clip");
@@ -258,33 +271,44 @@ public class AnimTool
         //添加clip        
         AnimatorStateMachine stateMachine = layer.stateMachine;
         string[] files = Directory.GetFiles(clipPath, "*anim");
-        List<Motion> clips = new List<Motion>();
+        Dictionary<string, Motion> dictClips = new Dictionary<string, Motion>();
         for (int i = 0; i < files.Length; i++)
         {
             Motion cp = AssetDatabase.LoadAssetAtPath<Motion>(files[i]);
             if (cp != null)
             {
-                clips.Add(cp);
+                dictClips.Add(cp.name, cp);
             }
         }
-        int startY = 0;
-        bool isLeft = false;
-        int startX = 0;
+
         AnimatorState animState = null;
-        for (int i = 0; i < clips.Count; i++)
+        //先创建blendTree
+        if (blendInfo.Count > 0)
         {
-            string name = clips[i].name;       
-            bool isStand = name == defaultAnim;
-            startY = isStand ? startY : startY + 1;
-            if (!isStand)
+            if (!isExitParam(ac, "tree"))
+                ac.AddParameter("tree", AnimatorControllerParameterType.Float);
+            BlendTree btree = null;
+            animState = ac.CreateBlendTreeInController(defaultAnim, out btree);
+            btree.blendParameter = "tree";
+            for (int i = 0; i < blendInfo.Count; i++)
             {
-                startX = 430;// isLeft ? 430 + 100 : 430 - 100;
-                isLeft = !isLeft;
+                string cname = blendInfo[i].clipName;
+                if (dictClips.ContainsKey(cname))
+                    btree.AddChild(dictClips[cname]);
             }
-            animState = stateMachine.AddState(name, isStand ? new Vector2(600, 0) : new Vector2(startX, startY * 100));
-            animState.motion = clips[i];
-            if (isStand)
-                stateMachine.defaultState = animState;
+            stateMachine.AddState(animState, new Vector2(600, -200));
+            stateMachine.defaultState = animState;
+        }
+
+        int startY = 0;
+        int startX = 300;
+        for (int i = 0; i < lstInfo.Count; i++)
+        {            
+            if (lstInfo[i].blendIndex > 0) continue;            
+            string name = lstInfo[i].clipName;
+            animState = stateMachine.AddState(name, new Vector2(startX, startY * 80));
+            animState.motion = dictClips[name];
+            startY++;
         }
         //连线
         ChildAnimatorState[] states = stateMachine.states;
@@ -312,7 +336,8 @@ public class AnimTool
                     {
                         trans.hasExitTime = false;
                     }
-                    else if (cond.toCond == "Exit") {
+                    else if (cond.toCond == "Exit")
+                    {
                         trans.hasExitTime = true;
                     }
                     else
@@ -366,7 +391,7 @@ public class AnimTool
             cond.fromState = vals[2] == "0" ? "Any State" : vals[2];
             cond.fromCond = vals[3];
             cond.toState = vals[4] == "0" ? defaultAnim : vals[4];
-            cond.toCond = vals[5] == "0" ? "Exit" : vals[5] == "1"? "None" : vals[5];
+            cond.toCond = vals[5] == "0" ? "Exit" : vals[5] == "1" ? "None" : vals[5];
             conds.Add(cond.clipName, cond);
         }
     }

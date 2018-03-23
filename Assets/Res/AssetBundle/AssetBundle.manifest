@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 157158900
+CRC: 1884417908
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -190,3 +190,6 @@ AssetBundleManifest:
       Dependencies:
         Dependency_0: animators/role_mimi/ac.assetbundle
         Dependency_1: materials/role_mimi.assetbundle
+    Info_49:
+      Name: modelprefabs/role_cap.assetbundle
+      Dependencies: {}
