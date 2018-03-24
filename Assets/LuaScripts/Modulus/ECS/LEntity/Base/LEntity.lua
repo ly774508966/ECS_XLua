@@ -21,7 +21,7 @@ function LEntity:__init_self()
 end 
 
 function LEntity:playAudio(args)
-   
+   LuaExtend:playRoleAudioOneShot(args)
 end 
 
 function LEntity:playEffect(args)

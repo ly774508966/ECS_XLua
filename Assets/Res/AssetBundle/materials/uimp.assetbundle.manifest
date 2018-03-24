@@ -3,7 +3,7 @@ CRC: 289814385
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: a276cec05bde500001777cd511a93b34
+    Hash: ecf15e92346b6a9cb6d59c02e629d632
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6f165f44e4778b6c9d85e7a145a54cb1
@@ -18,5 +18,5 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Materials/UIMP.mat
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/noisedark.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/shader/uihead.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/textures/noisedark.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/shader/uihead.assetbundle

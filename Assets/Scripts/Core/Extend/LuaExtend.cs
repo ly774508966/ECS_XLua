@@ -323,6 +323,13 @@ public static class LuaExtend
     }
     #endregion
 
+    #region 音效相关接口
+    public static void playRoleAudioOneShot(string name) {
+        AudioMgr.playRoleOneShot(name);
+    }
+    #endregion
+
+
     /// <summary>
     /// 卸载所有ab
     /// </summary>

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1247700385
+CRC: 2906068877
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 8dd02c42f67c3918f21820647a29cf8a
+    Hash: 51f35dbdbfd1bdc15c984644acb08c9d
   TypeTreeHash:
     serializedVersion: 2
     Hash: 0a4381b8d24d7546af2f9b5d2b1de238
@@ -16,4 +16,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Animators/Role_Mimi/ac/Role_Mimi.controller
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/animators/role_mimi/clip.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/animators/role_mimi/clip.assetbundle

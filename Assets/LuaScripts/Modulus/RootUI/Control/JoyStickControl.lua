@@ -41,14 +41,14 @@ function JoyStickControl:onEndDrag()
    if self:checkMainPlayer() then 
    	  self.mainPlayer:updateComp(LCompType.Speed,0)
   	     self.mainPlayer:updateComp(LCompType.Animator,'idle')
-        LuaExtend:doFloatTo(function(val) 
+        --LuaExtend:doFloatTo(function(val) 
            if self.mainPlayer then 
                local animComp = self.mainPlayer:getComp(LCompType.Animator)
                if animComp and animComp.anim then 
-                  animComp.anim:SetFloat('tree',val)
+                  animComp.anim:SetFloat('tree',0)
                end
            end 
-        end,0.5,0,0.5) 
+        --end,0.5,0,0.5) 
    	  --self.mainPlayer:updateComp(LCompType.Rotation,angle)
    end 	
 end 

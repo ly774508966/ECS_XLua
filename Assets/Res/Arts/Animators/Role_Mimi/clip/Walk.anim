@@ -4743,7 +4743,7 @@ AnimationClip:
     messageOptions: 0
   - time: 0.1
     functionName: playAudio
-    data: 20000101
+    data: roleclip/role_walk
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

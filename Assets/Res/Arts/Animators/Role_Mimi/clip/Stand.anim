@@ -2754,15 +2754,8 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 0.123333335
-    functionName: playAudio
-    data: 20000101
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.24666667
     functionName: playEffect
-    data: 10000201
+    data: 20000101
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

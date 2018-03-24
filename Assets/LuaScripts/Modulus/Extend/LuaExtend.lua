@@ -110,6 +110,13 @@ function LuaExtend:getSecTimer()
     return CS.LuaExtend.getSecTimer()
 end
 
+--------------------------------------------------------------------
+-------------------------音效相关-----------------------------------
+-------------------------------------------------------------------
+function LuaExtend:playRoleAudioOneShot(name)
+    CS.LuaExtend.playRoleAudioOneShot(name)
+end
+
 
 function LuaExtend:unloadAllAssetBundle()
    CS.LuaExtend.unloadAllAssetBundle()

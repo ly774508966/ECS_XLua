@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1129527396
+CRC: 398275018
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f758eca17aac68bf73be32c89635f5e5
+    Hash: 3415e55d4bada0da7641071a1946c207
   TypeTreeHash:
     serializedVersion: 2
     Hash: 05ccea70c2318bb82f29470f86f7942a
@@ -26,5 +26,5 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/ModelPrefabs/Player_002_hunter.prefab
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ds_equipment_standard.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ds_skeleton_standard.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/ds_skeleton_standard.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/ds_equipment_standard.assetbundle

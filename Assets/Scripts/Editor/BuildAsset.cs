@@ -18,6 +18,7 @@ public class BuildAsset
     private const string materialPath = "Assets/Res/Arts/Materials";
     private const string shaderPath = "Assets/Res/Arts/Shader";
     private const string animator = "Assets/Res/Arts/Animators";
+    private const string audios = "Assets/Res/Arts/Audios";
     //打包图集 每个文件夹下面打包成一个ab
     private const string atlasPath = "Assets/Res/Arts/Atlas";
     /// <summary>
@@ -48,6 +49,7 @@ public class BuildAsset
         lst.Add(texturesPath);
         lst.Add(materialPath);
         lst.Add(shaderPath);
+        lst.Add(audios);
         lst.Add(animator);
     }
 
@@ -69,13 +71,14 @@ public class BuildAsset
         }
         Stopwatch watch = new Stopwatch();
         watch.Start();
-        markResDirectory(atlasPath, ".png", true);
-        markResDirectory(animator, new List<string> { ".controller" }, true);
-        markResDirectory(animator, new List<string> { ".anim" }, true);        
-        markRes(texturesPath, ".png");
-        markRes(materialPath, ".mat");
-        markRes(shaderPath, ".shader");
-        markFloder(prefabsPath, ".prefab");
+        markResDirectory(atlasPath, ".png", true);//图集打包一个文件夹
+        markResDirectory(animator, new List<string> { ".controller" }, false);//cc单独打包
+        markResDirectory(animator, new List<string> { ".anim" }, true);   //.anim打包文件夹     
+        markResDirectory(audios, new List<string> { ".ogg" }, false);//audio单独打包
+        markRes(texturesPath, ".png");//贴图单独打包
+        markRes(materialPath, ".mat");//材质单独打包
+        markRes(shaderPath, ".shader");//shader单独打包
+        markFloder(prefabsPath, ".prefab");//预设单独打包
         BuildABs();
         watch.Stop();
         EditorUtility.ClearProgressBar();
