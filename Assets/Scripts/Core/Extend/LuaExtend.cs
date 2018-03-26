@@ -262,7 +262,6 @@ public static class LuaExtend
     }
     #endregion
 
-
     #region 摄像机相关
     public static void setCameraPlayer(GameObject player)
     {
@@ -327,8 +326,10 @@ public static class LuaExtend
     public static void playRoleAudioOneShot(string name) {
         AudioMgr.playRoleOneShot(name);
     }
+    public static void playAtPoint(string name, Vector3 pos) {
+        AudioMgr.playOneShot(name, pos);
+    }
     #endregion
-
 
     #region 子弹相关接口
     public static BaseBullet createBullet(BulletData data) {
@@ -345,7 +346,6 @@ public static class LuaExtend
         return new BulletData();
     }
     #endregion
-
 
     #region 实体管理相关
     public static void addEntity(CEntity e) {

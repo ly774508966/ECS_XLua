@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3964190953
+CRC: 516530077
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ab0e600ad736855b8dd7c55878b4362c
+    Hash: 2acde6720c0cd01e364e1363f18d3e92
   TypeTreeHash:
     serializedVersion: 2
     Hash: 5561b530b6948a2c32ffb11452233a92
@@ -32,7 +32,7 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/EffectPrefabs/1_RFX_HitBlood1.prefab
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/blood_splat.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/flamebomb_explosion.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/spark.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/flamebomb_explosion.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/blood_splat.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/spark.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/light.assetbundle

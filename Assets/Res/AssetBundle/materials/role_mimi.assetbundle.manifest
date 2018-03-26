@@ -3,7 +3,7 @@ CRC: 270712614
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: b19de0e0c8c86fd327e7d09f99b70c3b
+    Hash: 4b0c5ac880148e5a77ca07b802f8b17e
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6f165f44e4778b6c9d85e7a145a54cb1
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Materials/role_mimi.mat
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/role_mimi.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/textures/role_mimi.assetbundle

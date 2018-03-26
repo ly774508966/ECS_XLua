@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 4028634700
+CRC: 271012386
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 6c12d6ed969d1e46b54b701571737f13
+    Hash: efcb0f40a4fa0633dfb101e94edfd379
   TypeTreeHash:
     serializedVersion: 2
     Hash: b075bbdac508903412903913e8308dad
@@ -34,5 +34,5 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/ModelPrefabs/Role_Mimi.prefab
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/role_mimi.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/ac/role_mimi.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/role_mimi.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/ac/role_mimi.assetbundle

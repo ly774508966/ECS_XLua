@@ -3,7 +3,7 @@ CRC: 214791459
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ef477a1bb19ab856c5173314ae70e693
+    Hash: 58414deb582bb727d2249dae511820a6
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6f165f44e4778b6c9d85e7a145a54cb1
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Materials/Leaf.mat
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/leaf.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/textures/leaf.assetbundle

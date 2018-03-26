@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3194983779
+CRC: 101434994
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 2c7702033fcc8d70e0327ae76300dbb6
+    Hash: 57418d7d04d018e5b34fe8e161932e66
   TypeTreeHash:
     serializedVersion: 2
     Hash: 5561b530b6948a2c32ffb11452233a92
@@ -32,9 +32,9 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/EffectPrefabs/33_RFX_MuzzleFlash1.prefab
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/flamebomb_explosion.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/flame_explosion_add.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_add.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/smoke.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/spark.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/stretch_hit01.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/light_add.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/flamebomb_explosion.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/smoke.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/flame_explosion_add.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/stretch_hit01.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/spark.assetbundle

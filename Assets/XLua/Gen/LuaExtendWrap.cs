@@ -31,7 +31,7 @@ namespace XLua.CSObjectWrap
 			Utils.EndObjectRegister(type, L, translator, null, null,
 			    null, null, null);
 
-		    Utils.BeginClassRegister(type, L, __CreateInstance, 36, 0, 0);
+		    Utils.BeginClassRegister(type, L, __CreateInstance, 37, 0, 0);
 			Utils.RegisterFunc(L, Utils.CLS_IDX, "getLUID", _m_getLUID_xlua_st_);
             Utils.RegisterFunc(L, Utils.CLS_IDX, "getSUID", _m_getSUID_xlua_st_);
             Utils.RegisterFunc(L, Utils.CLS_IDX, "getVectorAngle", _m_getVectorAngle_xlua_st_);
@@ -62,6 +62,7 @@ namespace XLua.CSObjectWrap
             Utils.RegisterFunc(L, Utils.CLS_IDX, "setCameraPlayer", _m_setCameraPlayer_xlua_st_);
             Utils.RegisterFunc(L, Utils.CLS_IDX, "doShake", _m_doShake_xlua_st_);
             Utils.RegisterFunc(L, Utils.CLS_IDX, "playRoleAudioOneShot", _m_playRoleAudioOneShot_xlua_st_);
+            Utils.RegisterFunc(L, Utils.CLS_IDX, "playAtPoint", _m_playAtPoint_xlua_st_);
             Utils.RegisterFunc(L, Utils.CLS_IDX, "createBullet", _m_createBullet_xlua_st_);
             Utils.RegisterFunc(L, Utils.CLS_IDX, "getBulletData", _m_getBulletData_xlua_st_);
             Utils.RegisterFunc(L, Utils.CLS_IDX, "addEntity", _m_addEntity_xlua_st_);
@@ -1114,6 +1115,33 @@ namespace XLua.CSObjectWrap
                     string name = LuaAPI.lua_tostring(L, 1);
                     
                     LuaExtend.playRoleAudioOneShot( name );
+                    
+                    
+                    
+                    return 0;
+                }
+                
+            } catch(System.Exception __gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + __gen_e);
+            }
+            
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_playAtPoint_xlua_st_(RealStatePtr L)
+        {
+		    try {
+            
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+            
+                
+                {
+                    string name = LuaAPI.lua_tostring(L, 1);
+                    UnityEngine.Vector3 pos;translator.Get(L, 2, out pos);
+                    
+                    LuaExtend.playAtPoint( name, pos );
                     
                     
                     

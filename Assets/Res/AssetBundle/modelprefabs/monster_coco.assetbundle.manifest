@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 4219000774
+CRC: 12115553
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: b978739c2d1eac3129c0f7f673e741f0
+    Hash: 20b43ab695ded0eb9528f5d77ff4c435
   TypeTreeHash:
     serializedVersion: 2
     Hash: b075bbdac508903412903913e8308dad
@@ -34,5 +34,5 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/ModelPrefabs/Monster_coco.prefab
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/ac/monster_coco.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/monster_coco.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/monster_coco.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/ac/monster_coco.assetbundle

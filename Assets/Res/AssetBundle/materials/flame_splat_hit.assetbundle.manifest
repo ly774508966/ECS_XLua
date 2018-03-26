@@ -3,7 +3,7 @@ CRC: 3784712830
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 68b6e1d3bce1f6c8a0cab84c5143cbf4
+    Hash: 1e631c67811c855ca4a19a5e6ef68844
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6f165f44e4778b6c9d85e7a145a54cb1
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Materials/Flame_Splat_Hit.mat
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/flame_splat_hit.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/textures/flame_splat_hit.assetbundle

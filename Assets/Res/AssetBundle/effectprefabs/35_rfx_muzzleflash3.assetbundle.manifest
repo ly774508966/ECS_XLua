@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 224551407
+CRC: 1457999806
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 8ec28bfcafab9266fefa976aa2a97a24
+    Hash: 37cc2bb517da7bcbe55b997e39c2ab18
   TypeTreeHash:
     serializedVersion: 2
     Hash: 54d54afb10dfe252a87e3f3d8cf75b7a
@@ -38,9 +38,9 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/EffectPrefabs/35_RFX_MuzzleFlash3.prefab
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/beam.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/circle2.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/flame_explosion_add.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_add.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/spark.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/trajectory_electro.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/light_add.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/circle2.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/trajectory_electro.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/flame_explosion_add.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/beam.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/spark.assetbundle

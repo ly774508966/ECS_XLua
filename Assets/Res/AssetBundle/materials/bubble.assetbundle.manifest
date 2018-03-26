@@ -3,7 +3,7 @@ CRC: 3874531967
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 7b88cd827cbe2cc4fe16db9d49db295e
+    Hash: fa0a89f516ec2352cc84fa0b9983fe55
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6f165f44e4778b6c9d85e7a145a54cb1
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Materials/Bubble.mat
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/bubble.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/textures/bubble.assetbundle

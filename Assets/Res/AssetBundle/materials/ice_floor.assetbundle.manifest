@@ -3,7 +3,7 @@ CRC: 840642999
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5d31648dddae94eaa8bea93650668b8d
+    Hash: 67c82aac1fd596037fd6321c69af8196
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6f165f44e4778b6c9d85e7a145a54cb1
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Materials/ice_Floor.mat
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/ice_floor.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/textures/ice_floor.assetbundle

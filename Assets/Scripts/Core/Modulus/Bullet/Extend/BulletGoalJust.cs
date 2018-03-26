@@ -11,6 +11,8 @@ public class BulletGoalJust : BaseBullet
     {
         //初始化pos
         CacheTrans.position = data.startPos;
+        speed = data.speed;
+        reachDis = speed;
         //加载特效
         if (!insEff&&!string.IsNullOrEmpty(data.effPath) )
         {
@@ -46,7 +48,7 @@ public class BulletGoalJust : BaseBullet
             }
             onFinish();
         }
-        CacheTrans.position += dir*0.5f;
+        CacheTrans.position += dir* speed;
     }
 
 }

@@ -3,7 +3,7 @@ CRC: 1675106153
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: d24cbf8ad03193bc1a7b174bf142e2d4
+    Hash: 3084cb33e9a5a2c8e8e32e06f78e8350
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6f165f44e4778b6c9d85e7a145a54cb1
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Materials/Stone_Debris.mat
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/stone_debris.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/textures/stone_debris.assetbundle

@@ -116,6 +116,9 @@ end
 function LuaExtend:playRoleAudioOneShot(name)
     CS.LuaExtend.playRoleAudioOneShot(name)
 end
+function LuaExtend:playAtPoint(name,pos)
+    CS.LuaExtend.playAtPoint(name,pos)
+end
 
 ----------------------------------------------------------------------------
 ------------------------------子弹接口相关----------------------------------

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3575735380
+CRC: 177032411
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5e1deb7751ffd5144d2f3c058cd992f9
+    Hash: f4d1e3db40814aba1a7a8fd30bcd9f0e
   TypeTreeHash:
     serializedVersion: 2
     Hash: 5561b530b6948a2c32ffb11452233a92
@@ -32,8 +32,8 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/EffectPrefabs/17_RFX_Bomb4.prefab
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/fire_real.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ice_floor.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/soft_smoke.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/spark_increase.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/stone_debris.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/soft_smoke.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/ice_floor.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/fire_real.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/spark_increase.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/stone_debris.assetbundle

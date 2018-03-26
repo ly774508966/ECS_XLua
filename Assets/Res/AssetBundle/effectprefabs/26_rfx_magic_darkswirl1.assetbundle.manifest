@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3697332899
+CRC: 622356140
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5986641e0b917569a9093735b8757e46
+    Hash: 0c046f544129eea8ed62a24bb4185d9e
   TypeTreeHash:
     serializedVersion: 2
     Hash: 838c7e77bea3daaed52e41b401ae5fc0
@@ -30,8 +30,8 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/EffectPrefabs/26_RFX_Magic_DarkSwirl1.prefab
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/bubble.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/circle2.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/floor.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_decal.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/smoke.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/bubble.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/circle2.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/smoke.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/light_decal.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/floor.assetbundle

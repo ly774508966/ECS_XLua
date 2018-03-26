@@ -18,6 +18,7 @@ public class BaseBullet : MonoBehaviour
     protected Vector3 disVec = Vector3.zero;//缓存两点距离
     protected Vector3 dir = Vector3.zero;//缓存移动方向
     protected float dis = 0;
+    protected float speed = 1;
     protected float reachDis = 0.5f;
     //是否定义子弹碰撞大小 无真实碰撞 todo 
     //是否定义飞行曲线 todo

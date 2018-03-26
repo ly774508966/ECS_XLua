@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 432576907
+CRC: 80692588
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 330c62fbd2b41c4522682ed1d5ca54d3
+    Hash: 4c1c98b2d1e300bce9986f19a74a5c16
   TypeTreeHash:
     serializedVersion: 2
     Hash: 5561b530b6948a2c32ffb11452233a92
@@ -32,13 +32,13 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/EffectPrefabs/18_RFX_Bomb5.prefab
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/broken_decal.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/fire_real.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/flame_explosion_add.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/heavy_smoke.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_add.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_decal.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/soft_smoke.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/spark_increase.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/stone_debris.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/stretch_hit01.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/soft_smoke.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/light_add.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/heavy_smoke.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/fire_real.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/spark_increase.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/flame_explosion_add.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/light_decal.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/stretch_hit01.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/broken_decal.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/stone_debris.assetbundle

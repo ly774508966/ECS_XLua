@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1211519450
+CRC: 3899762661
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 9da0d66504b7744444a757c9be0e6a96
+    Hash: c91f320fa21e68092bf5e0efd646f251
   TypeTreeHash:
     serializedVersion: 2
     Hash: bafa7dbc07cd8f1a536f8669ab7b56d4
@@ -36,12 +36,12 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/EffectPrefabs/32_RFX_Magic_Rock1.prefab
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/broken_decal.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/electric_splat_hit.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/flamebomb_explosion.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/glacialwall_mesh.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_add.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_decal.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/smoke.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/spark_increase.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/stone_debris.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/electric_splat_hit.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/light_add.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/flamebomb_explosion.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/glacialwall_mesh.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/smoke.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/spark_increase.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/light_decal.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/broken_decal.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/stone_debris.assetbundle

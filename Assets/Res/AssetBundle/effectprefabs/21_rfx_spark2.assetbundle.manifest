@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1536310129
+CRC: 3220400727
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 007cd32b3ae9ad58a498499b59457613
+    Hash: faea079010912f38b96dfcb0642a8324
   TypeTreeHash:
     serializedVersion: 2
     Hash: 5815f1cda3de7f2a865b5afaf46e10d3
@@ -40,6 +40,6 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/EffectPrefabs/21_RFX_Spark2.prefab
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_add.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/soft_smoke.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/spark.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/soft_smoke.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/light_add.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/spark.assetbundle

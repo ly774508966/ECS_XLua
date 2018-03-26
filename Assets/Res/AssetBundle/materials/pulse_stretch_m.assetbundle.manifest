@@ -3,7 +3,7 @@ CRC: 1055970688
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: e2061329f1f2722a3544dd0e08dff39c
+    Hash: c06077bad6f2ea48fef13e36ccd184ed
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6f165f44e4778b6c9d85e7a145a54cb1
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Materials/Pulse_Stretch_M.mat
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/pulse_stretch_m.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/textures/pulse_stretch_m.assetbundle

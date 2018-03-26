@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1939805493
+CRC: 3279512191
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: d9b64c384872f928575a0fd4c5581512
+    Hash: 0530a931242104350016daa3e8115a2e
   TypeTreeHash:
     serializedVersion: 2
     Hash: 838c7e77bea3daaed52e41b401ae5fc0
@@ -30,7 +30,7 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/EffectPrefabs/38_RFX_Nature_Snowyfield1.prefab
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/circle.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ice_decal.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ice_floor.assetbundle
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_smoke.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/circle.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/ice_floor.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/light_smoke.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/ice_decal.assetbundle

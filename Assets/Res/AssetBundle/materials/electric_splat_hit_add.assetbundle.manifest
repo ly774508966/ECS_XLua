@@ -3,7 +3,7 @@ CRC: 934405359
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 23d9ca39d23fb88dece18b7b185943d1
+    Hash: 0ae29208349af0776cd19f29324beb23
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6f165f44e4778b6c9d85e7a145a54cb1
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Materials/Electric_Splat_Hit_Add.mat
 Dependencies:
-- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/electric_splat_hit.assetbundle
+- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/textures/electric_splat_hit.assetbundle

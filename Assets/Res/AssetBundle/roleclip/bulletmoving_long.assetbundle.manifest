@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2793204171
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9f6471fc295af5b2ec6f1db253d2390a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3f7d0c5e0986ec71841622bcb2f9be1c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Arts/Audios/roleClip/bulletmoving_long.ogg
+Dependencies: []
