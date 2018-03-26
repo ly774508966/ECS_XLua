@@ -330,8 +330,35 @@ public static class LuaExtend
     #endregion
 
 
+    #region 子弹相关接口
+    public static BaseBullet createBullet(BulletData data) {
+        data.btype = (E_BulletType)data.luaType;
+        switch (data.btype) {
+            case E_BulletType.GoalJust:
+               return  BulletMgr.Instance.getBullet<BulletGoalJust>(data);
+        }
+        return null;
+    }
+
+    public static BulletData getBulletData()
+    {
+        return new BulletData();
+    }
+    #endregion
+
+
+    #region 实体管理相关
+    public static void addEntity(CEntity e) {
+        EntityMgr.addEntity(e);
+    }
+    public static void removeEntity(CEntity e)
+    {
+        EntityMgr.removeEntity(e);
+    }
+    #endregion
+
     /// <summary>
-    /// 卸载所有ab
+    /// 测试卸载所有ab
     /// </summary>
     public static void unloadAllAssetBundle() {
         AssetMgr.clearAll();

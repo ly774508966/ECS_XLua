@@ -3,7 +3,7 @@ CRC: 143621811
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: c4851f860b19c56ed0f1f04a6fb0fe69
+    Hash: d9b642cd36be93b5bc82f47854b53c04
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6f165f44e4778b6c9d85e7a145a54cb1
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Materials/DS_skeleton_standard.mat
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/textures/ds_skeleton_standard.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/ds_skeleton_standard.assetbundle

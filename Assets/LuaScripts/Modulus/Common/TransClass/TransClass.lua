@@ -4,6 +4,7 @@ Animator = typeof(CS.UnityEngine.Animator)
 LVector3 = typeof(CS.UnityEngine.Vector3)
 BillBoardWidget = typeof(CS.BillBoardWidget)
 CEntity = typeof(CS.CEntity)
+BulletData = typeof(CS.BulletData)
 --UI
 CSImage = typeof(CS.UnityEngine.UI.Image)
 CSButton = typeof(CS.UnityEngine.UI.Button)

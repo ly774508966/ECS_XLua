@@ -58,6 +58,7 @@ end
 
 --加载UI
 function BaseUI:loadUI(path)
+	print("加载UI path "..path)
 	LuaExtend:loadObj(path,function(obj)  
        self:bindLayout(obj)
 	end)

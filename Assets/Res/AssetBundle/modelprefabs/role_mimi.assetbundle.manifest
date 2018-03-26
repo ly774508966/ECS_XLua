@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1857907085
+CRC: 2499368308
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 92c79dbb09dcaa03dafd030a57ab8b39
+    Hash: c401cc0a2b9d8abb80434d10ad1b0e7c
   TypeTreeHash:
     serializedVersion: 2
-    Hash: ec69266be1c577f23c47b67954e41399
+    Hash: b075bbdac508903412903913e8308dad
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -24,9 +24,9 @@ ClassTypes:
 - Class: 95
   Script: {instanceID: 0}
 - Class: 114
-  Script: {fileID: 11500000, guid: 49039ec5769cbc740bac5ce2b2027f08, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 90d913d25c624774d981777070fbfadf, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 49039ec5769cbc740bac5ce2b2027f08, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 137
@@ -34,5 +34,5 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/ModelPrefabs/Role_Mimi.prefab
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/role_mimi.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/ac/role_mimi.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/role_mimi.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/ac/role_mimi.assetbundle

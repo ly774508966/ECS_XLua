@@ -3,7 +3,7 @@ CRC: 332051927
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 2379e63620ba9034dda2d9f742c2e96f
+    Hash: 2258d2d1c33c1da08143416db606945e
   TypeTreeHash:
     serializedVersion: 2
     Hash: 1b904ddcc1db0e758337c6f90b59e763
@@ -34,5 +34,5 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/UIPrefabs/SkillUI.prefab
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/atlas/skillicons.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/atlas/facebookicons.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/atlas/skillicons.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/atlas/facebookicons.assetbundle

@@ -52,6 +52,8 @@ public static class ExampleGenConfig
                 typeof(UnityEngine.Events.UnityAction),
                 typeof(EventListener),
                 typeof(CEntity),
+                typeof(BulletData),
+                typeof(Action<long,long,Vector3>),
                 typeof(UnityEngine.Debug)
             };
 
@@ -67,6 +69,7 @@ public static class ExampleGenConfig
                 typeof(Action<double>),
                 typeof(Action<int>),
                 typeof(Action<GameObject>),
+                typeof(Action<long,long,Vector3>),
                 typeof(Action<UnityEngine.EventSystems.PointerEventData>),
                 typeof(UnityEngine.Events.UnityAction),
                 typeof(DG.Tweening.TweenCallback),

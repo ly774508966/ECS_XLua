@@ -56,7 +56,8 @@ function LEntity:onLoading()
   self.csEntity:setPlayAudioEvent(self.audioListener)
   self.csEntity:setPlayEffectEvent(self.effectListener)
   self.csEntity:setPlayHitEvent(self.hitListener)
-  self.csEntity:setEnterStateEvent(self.enterStateListener)  
+  self.csEntity:setEnterStateEvent(self.enterStateListener)
+  LuaExtend:addEntity(self.csEntity) 
   --add component
   local lst = self.data:getCompLst()
   if lst then 
@@ -89,6 +90,8 @@ function LEntity:onDispose()
   self.effectListener = nil 
   self.hitListener = nil 
   self.enterStateListener = nil 
+  LuaExtend:removeEntity(self.csEntity) 
+  self.csEntity = nil 
 end 
 
 function LEntity:updateComp(type,...)

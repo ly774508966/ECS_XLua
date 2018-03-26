@@ -117,7 +117,33 @@ function LuaExtend:playRoleAudioOneShot(name)
     CS.LuaExtend.playRoleAudioOneShot(name)
 end
 
+----------------------------------------------------------------------------
+------------------------------子弹接口相关----------------------------------
+----------------------------------------------------------------------------
+function LuaExtend:createBullet(data)
+    return CS.LuaExtend.createBullet(data)
+end
+function LuaExtend:getBulletData()
+    return CS.LuaExtend.getBulletData()
+end 
 
+
+----------------------------------------------------------------------------
+------------------------------实体接口相关----------------------------------
+----------------------------------------------------------------------------
+function LuaExtend:addEntity(e)
+    CS.LuaExtend.addEntity(e)
+end
+function LuaExtend:removeEntity(e)
+    CS.LuaExtend.removeEntity(e)
+end
+
+
+
+
+
+
+-----测试
 function LuaExtend:unloadAllAssetBundle()
    CS.LuaExtend.unloadAllAssetBundle()
 end 

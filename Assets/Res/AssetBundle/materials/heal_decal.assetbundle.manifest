@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1219572554
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d832b2a95aa8a84315d4e986a5cfa262
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 6f165f44e4778b6c9d85e7a145a54cb1
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Arts/Materials/Heal_Decal.mat
+Dependencies: []

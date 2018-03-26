@@ -30,6 +30,17 @@ public enum E_AssetType
     Textures,
 }
 
+//子弹类型
+public enum E_BulletType
+{
+    None = 0,
+    GoalJust,//到达目标销毁回调 #lst = 1
+    GoalExplode,//到达目标 爆炸销毁回调 lst ={ }
+    UnGoalFirst,//无目标 遇到第一个销毁回调 #lst = 1
+    UnGoalFirstExplode,//无目标 遇到第一个爆炸销毁回调 lst = { }
+    UnGoalDistance,//无目标 遇到则回调 到达则销毁
+}
+
 public static class Define
 {
     public static string On_Scene_Load_Begin = "On_Scene_Load_Begin";

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2238241911
+CRC: 2744504923
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: fd5ae3b0e5d698fa2dbe402b56c3aca0
+    Hash: 2bca53589f963095d9796dc7128323e5
   TypeTreeHash:
     serializedVersion: 2
     Hash: 4e70d5a4c56a60703096f7a0940b1360
@@ -34,5 +34,5 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/ModelPrefabs/OneHand.prefab
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/ds_skeleton_standard.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/ds_equipment_standard.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ds_equipment_standard.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ds_skeleton_standard.assetbundle

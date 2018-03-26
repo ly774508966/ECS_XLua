@@ -117,6 +117,7 @@ public class BasePool
         go.transform.position = Vector3.zero;
         go.transform.localEulerAngles = Vector3.zero;
         go.transform.localScale = Vector3.one;
+        go.SetActive(true);
         usingTime = TimerUtils.getSecTimer();
         return go;
     }
@@ -126,6 +127,7 @@ public class BasePool
         GameObject go = po.Obj;
         go.transform.SetParent(root);
         go.transform.localPosition = Vector3.zero;
+        go.SetActive(false);
         objLst.Add(po);
     }
 

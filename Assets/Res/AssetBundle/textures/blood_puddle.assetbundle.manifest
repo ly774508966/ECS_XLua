@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1219642344
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0f9e76dc4de43eeddbad88071dc18cb7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c73412a662fd4e4f36af34cbdf078b85
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Arts/Textures/Blood_Puddle.png
+Dependencies: []

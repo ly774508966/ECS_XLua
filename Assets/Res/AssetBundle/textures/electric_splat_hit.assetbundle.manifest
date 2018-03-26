@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 4082003383
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9d9a8184c8810782d4cc85f2c7dfa4ea
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c73412a662fd4e4f36af34cbdf078b85
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Arts/Textures/Electric_Splat_Hit.png
+Dependencies: []

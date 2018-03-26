@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 2972004352
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 564b02570fdb70765dfb3dfc160397fe
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 838c7e77bea3daaed52e41b401ae5fc0
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5adaa9a4c3fdef840a58462d041416de, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Arts/Prefabs/EffectPrefabs/37_RFX_Nature_Rain2.prefab
+Dependencies:
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/circle.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/pulse_wave.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/water_splash.assetbundle

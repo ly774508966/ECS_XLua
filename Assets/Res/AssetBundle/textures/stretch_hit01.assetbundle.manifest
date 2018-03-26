@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2155926081
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f3a4ef22718f42ea49dbdadaec5f13ea
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c73412a662fd4e4f36af34cbdf078b85
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Arts/Textures/Stretch_Hit01.png
+Dependencies: []

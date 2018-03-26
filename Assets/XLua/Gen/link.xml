@@ -18,6 +18,7 @@
 		<type fullname="FooExtension" preserve="all"/>
 		<type fullname="EventListener" preserve="all"/>
 		<type fullname="CEntity" preserve="all"/>
+		<type fullname="BulletData" preserve="all"/>
 		<type fullname="Tutorial.BaseClass" preserve="all"/>
 		<type fullname="Tutorial.TestEnum" preserve="all"/>
 		<type fullname="Tutorial.DrivenClass" preserve="all"/>

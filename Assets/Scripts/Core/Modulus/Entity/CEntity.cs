@@ -19,6 +19,38 @@ public class CEntity : MonoBehaviour
             this.uid = value;
         }
     }
+    private int type=1;//随便写的类型 待赋值
+    public int Type {
+        get {
+            return type;
+        }
+    }
+
+    private Transform cacheTrans;
+    public Transform CacheTrans
+    {
+        get
+        {
+            if (cacheTrans == null)
+            {
+                cacheTrans = this.transform;
+            }
+            return cacheTrans;
+        }
+    }
+
+    private GameObject cacheObj;
+    public GameObject CacheObj
+    {
+        get
+        {
+            if (cacheObj == null)
+            {
+                cacheObj = this.gameObject;
+            }
+            return cacheObj;
+        }
+    }
 
     private Action<string> playAudioEvent = null;
     private Action<string> playEffectEvent = null;
