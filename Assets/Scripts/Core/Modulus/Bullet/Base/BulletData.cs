@@ -7,7 +7,8 @@ public class BulletData
     public E_BulletType btype;
     public int luaType;
     public long cfgId;
-    public long effectId;
+    public string effPath = null;
+    public string expPath = null;
     public Vector3 startPos;
     public Vector3 endPos;
     public long goalUID;

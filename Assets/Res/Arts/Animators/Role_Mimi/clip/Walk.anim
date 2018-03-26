@@ -4741,16 +4741,9 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.1
+  - time: 0.5
     functionName: playAudio
     data: roleclip/role_walk
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.2
-    functionName: playEffect
-    data: 10000201
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

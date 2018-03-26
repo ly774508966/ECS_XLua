@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 97898615
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b339c9aa404bc10cb7c33f53cf1aa13a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0a4381b8d24d7546af2f9b5d2b1de238
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Arts/Animators/Monster_coco/ac/Monster_coco.controller
+Dependencies:
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/animators/monster_coco/clip.assetbundle

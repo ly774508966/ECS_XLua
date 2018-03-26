@@ -28,18 +28,14 @@ function BottomMidUI:initLayout()
     self.deleteBtn:setOnClick(function() 
     	--EntityMgr:destroyEntity(mainId)
         local bdata = BulletHelper:getData(0)
-        local x = math.random(-100,100)
-        local z = math.random(-100,100)
-        bdata.startPos = Vector3(x,10,z)
-        bdata.goalUID = mainId
+        local player = EntityMgr:getMainEntity()
+        bdata.startPos = player.root.transform.position
+        bdata.goalUID = 800000010002
         bdata.callBack = function(bid,eid,pos)
-           --print(bid)
-           --print(eid)
-           --print(pos)
-           local effPath = "effectprefabs/31_RFX_Magic_Pulse1"
-           LuaExtend:loadObj(effPath,function(obj)  
+            local effPath = "effectprefabs/31_RFX_Magic_Pulse1"
+            LuaExtend:loadObj(effPath,function(obj)  
               LuaExtend:setObjPos(obj,pos.x,pos.y,pos.z)
-           end)
+            end)
         end
         LuaExtend:createBullet(bdata)
     end)

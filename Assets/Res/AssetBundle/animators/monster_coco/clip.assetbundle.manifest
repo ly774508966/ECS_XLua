@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 3354056758
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 56d7ae58fb6389b5aa583ac2f1cc0119
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 57cc261e7722b8429fae0fb29649ddb8
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Arts/Animators/Monster_coco/clip/Skill3.anim
+- Assets/Res/Arts/Animators/Monster_coco/clip/Dead.anim
+- Assets/Res/Arts/Animators/Monster_coco/clip/Parry.anim
+- Assets/Res/Arts/Animators/Monster_coco/clip/Skill2.anim
+- Assets/Res/Arts/Animators/Monster_coco/clip/Run.anim
+- Assets/Res/Arts/Animators/Monster_coco/clip/Dodge.anim
+- Assets/Res/Arts/Animators/Monster_coco/clip/Hit.anim
+- Assets/Res/Arts/Animators/Monster_coco/clip/Attack.anim
+- Assets/Res/Arts/Animators/Monster_coco/clip/Walk.anim
+- Assets/Res/Arts/Animators/Monster_coco/clip/Stand.anim
+- Assets/Res/Arts/Animators/Monster_coco/clip/Skill1.anim
+Dependencies: []

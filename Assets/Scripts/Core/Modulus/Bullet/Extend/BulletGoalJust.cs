@@ -11,18 +11,17 @@ public class BulletGoalJust : BaseBullet
     {
         //初始化pos
         CacheTrans.position = data.startPos;
-        if (!insEff )//特效id>0
+        //加载特效
+        if (!insEff&&!string.IsNullOrEmpty(data.effPath) )
         {
             insEff = true;
-            ResMgr.Instance.getObj("effectprefabs/27_RFX_Magic_FlameSwirl1", (obj) =>
+            ResMgr.Instance.getObj(data.effPath, (obj) =>
             {
                 obj.transform.SetParent(CacheTrans);
                 obj.transform.localPosition = Vector3.zero;
                 obj.transform.localEulerAngles = new Vector3(-90, 0, 0);
             });
-        }
-        //加载特效
-
+        }       
     }
 
     protected override void onUpdate()

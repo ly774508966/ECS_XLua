@@ -15,11 +15,12 @@ function LPositionSystem:onUpdate(lst)
            local entity = EntityMgr:getEntity(v:getUid())
            if entity then 
               local dir = v.pos - entity.root.transform.position
-              --print(v.pos)
-              --print(dir.magnitude)
               local isArrive = dir.magnitude <= 1
+              local animComp = entity:getComp(LCompType.Animator)
+              if animComp and animComp.anim then 
+                 animComp.anim:SetFloat('tree',isArrive and 0 or 0.5)
+              end
               if not isArrive then
-                entity:updateComp(LCompType.Animator,'walk')--动画
                 local angle = LuaExtend:getAngle(dir)
                 entity:updateComp(LCompType.Rotation,angle)--面向
                 local comp = entity:getComp(LCompType.CharacterController)

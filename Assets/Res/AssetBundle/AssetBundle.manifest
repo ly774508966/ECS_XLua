@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 483152449
+CRC: 4187226833
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -901,3 +901,19 @@ AssetBundleManifest:
         Dependency_5: materials/spark_increase.assetbundle
         Dependency_6: materials/stone_debris.assetbundle
         Dependency_7: materials/stretch_hit01.assetbundle
+    Info_194:
+      Name: ac/monster_coco.assetbundle
+      Dependencies:
+        Dependency_0: animators/monster_coco/clip.assetbundle
+    Info_195:
+      Name: animators/monster_coco/clip.assetbundle
+      Dependencies: {}
+    Info_196:
+      Name: materials/monster_coco.assetbundle
+      Dependencies:
+        Dependency_0: textures/role_mimi.assetbundle
+    Info_197:
+      Name: modelprefabs/monster_coco.assetbundle
+      Dependencies:
+        Dependency_0: ac/monster_coco.assetbundle
+        Dependency_1: materials/monster_coco.assetbundle

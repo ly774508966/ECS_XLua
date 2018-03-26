@@ -5249,16 +5249,9 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.07333334
+  - time: 0.36666667
     functionName: playAudio
     data: roleclip/role_run
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.22000001
-    functionName: playHit
-    data: 100000001
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

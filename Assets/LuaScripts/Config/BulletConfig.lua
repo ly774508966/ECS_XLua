@@ -1,0 +1,27 @@
+BulletConfig = { }
+BulletConfig[100001]={id=100001,remark='',type=1,startEff=1000102,expEff=1000101,speed=0.5}
+BulletConfig[100002]={id=100002,remark='',type=1,startEff=1000102,expEff=1000101,speed=1}
+BulletConfig[100003]={id=100003,remark='',type=1,startEff=1000102,expEff=1000101,speed=0.5}
+BulletConfig[100004]={id=100004,remark='',type=1,startEff=1000102,expEff=1000101,speed=1}
+BulletConfig[100005]={id=100005,remark='',type=1,startEff=1000102,expEff=1000101,speed=0.5}
+BulletConfig[100006]={id=100006,remark='',type=1,startEff=1000102,expEff=1000101,speed=1}
+BulletConfig[100007]={id=100007,remark='',type=1,startEff=1000102,expEff=1000101,speed=0.5}
+BulletConfig[100008]={id=100008,remark='',type=1,startEff=1000102,expEff=1000101,speed=1}
+BulletConfig[100009]={id=100009,remark='',type=1,startEff=1000102,expEff=1000101,speed=0.5}
+BulletConfig[100010]={id=100010,remark='',type=1,startEff=1000102,expEff=1000101,speed=1}
+BulletConfig[100011]={id=100011,remark='',type=1,startEff=1000102,expEff=1000101,speed=0.5}
+BulletConfig[100012]={id=100012,remark='',type=1,startEff=1000102,expEff=1000101,speed=1}
+BulletConfig[100013]={id=100013,remark='',type=1,startEff=1000102,expEff=1000101,speed=0.5}
+BulletConfig[100014]={id=100014,remark='',type=1,startEff=1000102,expEff=1000101,speed=1}
+BulletConfig[100015]={id=100015,remark='',type=1,startEff=1000102,expEff=1000101,speed=0.5}
+BulletConfig[100016]={id=100016,remark='',type=1,startEff=1000102,expEff=1000101,speed=1}
+BulletConfig[100017]={id=100017,remark='',type=1,startEff=1000102,expEff=1000101,speed=0.5}
+BulletConfig[100018]={id=100018,remark='',type=1,startEff=1000102,expEff=1000101,speed=1}
+BulletConfig[100019]={id=100019,remark='',type=1,startEff=1000102,expEff=1000101,speed=0.5}
+BulletConfig[100020]={id=100020,remark='',type=1,startEff=1000102,expEff=1000101,speed=1}
+BulletConfig[100021]={id=100021,remark='',type=1,startEff=1000102,expEff=1000101,speed=0.5}
+BulletConfig[100022]={id=100022,remark='',type=1,startEff=1000102,expEff=1000101,speed=1}
+BulletConfig[100023]={id=100023,remark='',type=1,startEff=1000102,expEff=1000101,speed=0.5}
+BulletConfig[100024]={id=100024,remark='',type=1,startEff=1000102,expEff=1000101,speed=1}
+BulletConfig[100025]={id=100025,remark='',type=1,startEff=1000102,expEff=1000101,speed=0.5}
+BulletConfig[100026]={id=100026,remark='',type=1,startEff=1000102,expEff=1000101,speed=1}

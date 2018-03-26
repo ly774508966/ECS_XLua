@@ -5016,9 +5016,9 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.24000001
+  - time: 0.080000006
     functionName: playHit
-    data: 100000001
+    data: 400001001
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

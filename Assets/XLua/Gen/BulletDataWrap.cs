@@ -21,26 +21,30 @@ namespace XLua.CSObjectWrap
         {
 			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
 			System.Type type = typeof(BulletData);
-			Utils.BeginObjectRegister(type, L, translator, 0, 0, 8, 8);
+			Utils.BeginObjectRegister(type, L, translator, 0, 0, 10, 10);
 			
 			
 			
 			Utils.RegisterFunc(L, Utils.GETTER_IDX, "btype", _g_get_btype);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "luaType", _g_get_luaType);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "cfgId", _g_get_cfgId);
-            Utils.RegisterFunc(L, Utils.GETTER_IDX, "effectId", _g_get_effectId);
+            Utils.RegisterFunc(L, Utils.GETTER_IDX, "effPath", _g_get_effPath);
+            Utils.RegisterFunc(L, Utils.GETTER_IDX, "expPath", _g_get_expPath);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "startPos", _g_get_startPos);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "endPos", _g_get_endPos);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "goalUID", _g_get_goalUID);
+            Utils.RegisterFunc(L, Utils.GETTER_IDX, "speed", _g_get_speed);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "callBack", _g_get_callBack);
             
 			Utils.RegisterFunc(L, Utils.SETTER_IDX, "btype", _s_set_btype);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "luaType", _s_set_luaType);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "cfgId", _s_set_cfgId);
-            Utils.RegisterFunc(L, Utils.SETTER_IDX, "effectId", _s_set_effectId);
+            Utils.RegisterFunc(L, Utils.SETTER_IDX, "effPath", _s_set_effPath);
+            Utils.RegisterFunc(L, Utils.SETTER_IDX, "expPath", _s_set_expPath);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "startPos", _s_set_startPos);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "endPos", _s_set_endPos);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "goalUID", _s_set_goalUID);
+            Utils.RegisterFunc(L, Utils.SETTER_IDX, "speed", _s_set_speed);
             Utils.RegisterFunc(L, Utils.SETTER_IDX, "callBack", _s_set_callBack);
             
 			
@@ -133,13 +137,27 @@ namespace XLua.CSObjectWrap
         }
         
         [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-        static int _g_get_effectId(RealStatePtr L)
+        static int _g_get_effPath(RealStatePtr L)
         {
 		    try {
                 ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
 			
                 BulletData __cl_gen_to_be_invoked = (BulletData)translator.FastGetCSObj(L, 1);
-                LuaAPI.lua_pushint64(L, __cl_gen_to_be_invoked.effectId);
+                LuaAPI.lua_pushstring(L, __cl_gen_to_be_invoked.effPath);
+            } catch(System.Exception __gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + __gen_e);
+            }
+            return 1;
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _g_get_expPath(RealStatePtr L)
+        {
+		    try {
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+			
+                BulletData __cl_gen_to_be_invoked = (BulletData)translator.FastGetCSObj(L, 1);
+                LuaAPI.lua_pushstring(L, __cl_gen_to_be_invoked.expPath);
             } catch(System.Exception __gen_e) {
                 return LuaAPI.luaL_error(L, "c# exception:" + __gen_e);
             }
@@ -182,6 +200,20 @@ namespace XLua.CSObjectWrap
 			
                 BulletData __cl_gen_to_be_invoked = (BulletData)translator.FastGetCSObj(L, 1);
                 LuaAPI.lua_pushint64(L, __cl_gen_to_be_invoked.goalUID);
+            } catch(System.Exception __gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + __gen_e);
+            }
+            return 1;
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _g_get_speed(RealStatePtr L)
+        {
+		    try {
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+			
+                BulletData __cl_gen_to_be_invoked = (BulletData)translator.FastGetCSObj(L, 1);
+                LuaAPI.lua_pushnumber(L, __cl_gen_to_be_invoked.speed);
             } catch(System.Exception __gen_e) {
                 return LuaAPI.luaL_error(L, "c# exception:" + __gen_e);
             }
@@ -251,13 +283,28 @@ namespace XLua.CSObjectWrap
         }
         
         [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-        static int _s_set_effectId(RealStatePtr L)
+        static int _s_set_effPath(RealStatePtr L)
         {
 		    try {
                 ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
 			
                 BulletData __cl_gen_to_be_invoked = (BulletData)translator.FastGetCSObj(L, 1);
-                __cl_gen_to_be_invoked.effectId = LuaAPI.lua_toint64(L, 2);
+                __cl_gen_to_be_invoked.effPath = LuaAPI.lua_tostring(L, 2);
+            
+            } catch(System.Exception __gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + __gen_e);
+            }
+            return 0;
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _s_set_expPath(RealStatePtr L)
+        {
+		    try {
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+			
+                BulletData __cl_gen_to_be_invoked = (BulletData)translator.FastGetCSObj(L, 1);
+                __cl_gen_to_be_invoked.expPath = LuaAPI.lua_tostring(L, 2);
             
             } catch(System.Exception __gen_e) {
                 return LuaAPI.luaL_error(L, "c# exception:" + __gen_e);
@@ -305,6 +352,21 @@ namespace XLua.CSObjectWrap
 			
                 BulletData __cl_gen_to_be_invoked = (BulletData)translator.FastGetCSObj(L, 1);
                 __cl_gen_to_be_invoked.goalUID = LuaAPI.lua_toint64(L, 2);
+            
+            } catch(System.Exception __gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + __gen_e);
+            }
+            return 0;
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _s_set_speed(RealStatePtr L)
+        {
+		    try {
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+			
+                BulletData __cl_gen_to_be_invoked = (BulletData)translator.FastGetCSObj(L, 1);
+                __cl_gen_to_be_invoked.speed = (float)LuaAPI.lua_tonumber(L, 2);
             
             } catch(System.Exception __gen_e) {
                 return LuaAPI.luaL_error(L, "c# exception:" + __gen_e);
