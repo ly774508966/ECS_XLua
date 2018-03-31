@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3166934664
+CRC: 3707397559
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 03e77850c3e110b8fa128017956b9ecf
+    Hash: 73cb34abb434bc8fc5af4c1b6d7a1ffb
   TypeTreeHash:
     serializedVersion: 2
     Hash: d0dee3357bb04b0fc302e8a5094f7a96
@@ -38,6 +38,6 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/ModelPrefabs/Player_001.prefab
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/ds_skeleton_standard.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/ds_equipment_standard.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/ac/player_001.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ds_equipment_standard.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ds_skeleton_standard.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/ac/player_001.assetbundle

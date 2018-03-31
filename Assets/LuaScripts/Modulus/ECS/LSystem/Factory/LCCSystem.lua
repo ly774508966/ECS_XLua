@@ -15,9 +15,9 @@ function LCCSystem:onUpdate(lst)
              local entity = EntityMgr:getEntity(v:getUid())               
              if entity then 
                 local cc = entity.root:AddComponent(CharacterController)
-                cc.height = v.ccHeight
-                cc.radius = v.ccRaidus
+                cc.height = v.ccHeight                
                 cc.center = Vector3(0,v.ccHeight/2,0)
+                cc.radius = v.ccRadius
                 v:setCC(cc)
              end 
         end

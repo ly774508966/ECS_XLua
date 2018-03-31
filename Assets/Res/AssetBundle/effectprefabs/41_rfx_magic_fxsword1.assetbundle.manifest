@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2917606404
+CRC: 440261227
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 9bcde282b8191d509e068c2808c5b871
+    Hash: f434f9204344ccb1811d99173289c739
   TypeTreeHash:
     serializedVersion: 2
     Hash: 38f29a424b8fa05e55d6d4d7c4dea5fe
@@ -36,8 +36,8 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/EffectPrefabs/41_RFX_Magic_FxSword1.prefab
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/electric_splat_hit.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/twirl.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/light_add.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/twinkle.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/sword.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/electric_splat_hit.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_add.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/sword.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/twinkle.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/twirl.assetbundle

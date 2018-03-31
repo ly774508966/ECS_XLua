@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 612792997
+CRC: 1592595571
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: c27bc7a0cd9172111bc7bed08930ea47
+    Hash: e41bf093f3ceed12a4b665804c7238fe
   TypeTreeHash:
     serializedVersion: 2
     Hash: 838c7e77bea3daaed52e41b401ae5fc0
@@ -30,6 +30,6 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/EffectPrefabs/36_RFX_Nature_Rain1.prefab
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/pulse_wave.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/circle.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/ring.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/circle.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/pulse_wave.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ring.assetbundle

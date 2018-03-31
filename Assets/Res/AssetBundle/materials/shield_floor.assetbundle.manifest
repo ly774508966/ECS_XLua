@@ -3,7 +3,7 @@ CRC: 711042530
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 3319d52886f36772fd50dd10edb7fb29
+    Hash: f7b9b1b0f3a83f3020bc57c723b1baf3
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6f165f44e4778b6c9d85e7a145a54cb1
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Materials/Shield_Floor.mat
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/textures/shield_floor.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/shield_floor.assetbundle

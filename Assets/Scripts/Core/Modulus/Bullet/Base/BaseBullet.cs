@@ -20,6 +20,7 @@ public class BaseBullet : MonoBehaviour
     protected float dis = 0;
     protected float speed = 1;
     protected float reachDis = 0.5f;
+    protected float moveStep = 2f;
     //是否定义子弹碰撞大小 无真实碰撞 todo 
     //是否定义飞行曲线 todo
     public E_BulletType btype = E_BulletType.None;    

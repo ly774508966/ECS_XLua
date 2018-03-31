@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3815697094
+CRC: 3167137141
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 3c20a8e0d9a39a555b8e98920e567c41
+    Hash: 048769155cfd292404224a0536ed5b87
   TypeTreeHash:
     serializedVersion: 2
     Hash: 5561b530b6948a2c32ffb11452233a92
@@ -32,11 +32,11 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/EffectPrefabs/9_RFX_HitSplat3.prefab
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/soft_smoke.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/light_add.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/fire_real.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/spark_increase.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/stretch_hit01.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/spark.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/broken_decal.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/stone_debris.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/broken_decal.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/fire_real.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_add.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/soft_smoke.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/spark.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/spark_increase.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/stone_debris.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/stretch_hit01.assetbundle

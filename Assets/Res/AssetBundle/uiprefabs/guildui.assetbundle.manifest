@@ -3,7 +3,7 @@ CRC: 3791886118
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 6fead9458f85e7170d2e722abff00801
+    Hash: 0686627c942c399e8c7629e0f33be457
   TypeTreeHash:
     serializedVersion: 2
     Hash: e64e65352a07d33458c2b3323da48131
@@ -40,4 +40,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/UIPrefabs/GuildUI.prefab
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/atlas/skillicons.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/atlas/skillicons.assetbundle

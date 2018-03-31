@@ -3,7 +3,7 @@ CRC: 2771415848
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 76fafbfb8ef3f8ef771a91b281480f94
+    Hash: 0354bc1b430971dd89d04303c86b0b15
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6f165f44e4778b6c9d85e7a145a54cb1
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Materials/Soft_Smoke.mat
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/textures/soft_smoke.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/soft_smoke.assetbundle

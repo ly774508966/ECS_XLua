@@ -3,7 +3,7 @@ CRC: 2108605440
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ecbde575370ba42be84b72c366e2872f
+    Hash: 92b071e3b4d01026e6325a87e452e76b
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6f165f44e4778b6c9d85e7a145a54cb1
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Materials/Stretch_Hit01.mat
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/textures/stretch_hit01.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/stretch_hit01.assetbundle

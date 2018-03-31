@@ -3,7 +3,7 @@ CRC: 56047040
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: fdc80c1188fe171c0424e14b3532d86a
+    Hash: f6f1c9fc55bbef2e36ebd5d9919e679c
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6f165f44e4778b6c9d85e7a145a54cb1
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Materials/Pulse_Smoke.mat
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/textures/pulse_smoke.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/pulse_smoke.assetbundle

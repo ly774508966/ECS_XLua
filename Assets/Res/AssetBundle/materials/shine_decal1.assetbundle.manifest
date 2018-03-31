@@ -3,7 +3,7 @@ CRC: 3385352107
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 86197199fd9262ba042e74872b368993
+    Hash: db668ce244877c96fb01142042e5e2e2
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6f165f44e4778b6c9d85e7a145a54cb1
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Materials/Shine_Decal1.mat
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/textures/shine_decal.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/shine_decal.assetbundle

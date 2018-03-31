@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3160221446
+CRC: 2527820198
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 10af7d338c4714f81b0fe863739c134b
+    Hash: 910c24d11f1c45932c1e831babe31e2c
   TypeTreeHash:
     serializedVersion: 2
     Hash: 5561b530b6948a2c32ffb11452233a92
@@ -32,10 +32,10 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/EffectPrefabs/28_RFX_Magic_GreenLava1.prefab
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/twinkle.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/fire_real.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/greenlight_broken_decal.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/spark_increase.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/pulse_smoke.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/light.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/electricbomb_explosion_add.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/electricbomb_explosion_add.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/fire_real.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/greenlight_broken_decal.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/pulse_smoke.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/spark_increase.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/twinkle.assetbundle

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 79bd137c1af8d7f49bd968476ad298ef
-timeCreated: 1521905851
+timeCreated: 1522475217
 licenseType: Pro
 ModelImporter:
   serializedVersion: 22
@@ -190,7 +190,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.5
+      - time: 0.15
         functionName: playAudio
         data: roleclip/role_walk
         objectReferenceParameter: {instanceID: 0}

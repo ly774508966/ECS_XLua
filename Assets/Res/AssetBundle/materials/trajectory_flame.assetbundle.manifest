@@ -3,7 +3,7 @@ CRC: 924853783
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 16366a482959a30182f61cb7e57f10fa
+    Hash: f3318490d13f9e9a24c7eccb473592fe
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6f165f44e4778b6c9d85e7a145a54cb1
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Materials/Trajectory_Flame.mat
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/textures/trajectory_flame.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/trajectory_flame.assetbundle

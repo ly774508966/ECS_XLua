@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1171810350
+CRC: 2578236290
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5034ce930f32f59a0bf12145e2ad7bcf
+    Hash: 434b97a19311e497737d45702bf41a71
   TypeTreeHash:
     serializedVersion: 2
     Hash: 5561b530b6948a2c32ffb11452233a92
@@ -32,10 +32,10 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/EffectPrefabs/31_RFX_Magic_Pulse1.prefab
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/twirl.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/light_add.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/twinkle.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/blackhole.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/ice_decal.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/light_decal.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/spark.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/blackhole.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ice_decal.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_add.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_decal.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/spark.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/twinkle.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/twirl.assetbundle

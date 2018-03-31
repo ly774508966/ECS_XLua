@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1269889928
+CRC: 1943802356
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 02a885091547fd04ddc33ef9535b7110
+    Hash: deb792844766dfd67103419e8429fe31
   TypeTreeHash:
     serializedVersion: 2
     Hash: 5561b530b6948a2c32ffb11452233a92
@@ -32,9 +32,9 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/EffectPrefabs/40_RFX_Trajectory_Flame1.prefab
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/trajectory_flame.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/fire01.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/blood_splat.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/spark.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/light.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/trajectory_blur.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/blood_splat.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/fire01.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/spark.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/trajectory_blur.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/trajectory_flame.assetbundle

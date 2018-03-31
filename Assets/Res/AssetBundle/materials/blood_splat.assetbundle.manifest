@@ -3,7 +3,7 @@ CRC: 1377991476
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: dfa531290bd3e55a8a82b685810a55d1
+    Hash: c76c779c44254c14af4d914d992ce2d8
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6f165f44e4778b6c9d85e7a145a54cb1
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Materials/Blood_Splat.mat
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/textures/blood_splat.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/blood_splat.assetbundle

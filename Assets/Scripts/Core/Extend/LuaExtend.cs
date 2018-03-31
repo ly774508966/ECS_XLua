@@ -50,6 +50,15 @@ public static class LuaExtend
     {
         SceneMgr.loadScene(level, progress);
     }
+    //设置层级接口
+    public static void setLayer(GameObject obj, int index) {
+        LayerUtils.setLayer(obj, index);
+    }
+    public static void setLayer(GameObject obj, string name)
+    {
+        LayerUtils.setLayer(obj, name);
+    }
+
     #endregion
 
     #region 计时器相关

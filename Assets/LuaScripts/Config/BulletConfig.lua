@@ -1,5 +1,5 @@
 BulletConfig = { }
-BulletConfig[100001]={id=100001,remark='',type=1,startEff=1000102,expEff=1000101,speed=0.5,startAudio=20000102,expAudio=20000104}
+BulletConfig[100001]={id=100001,remark='',type=1,startEff=1000102,expEff=1000101,speed=0.3,startAudio=20000102,expAudio=20000104}
 BulletConfig[100002]={id=100002,remark='',type=1,startEff=1000102,expEff=1000101,speed=1,startAudio=20000102,expAudio=20000104}
 BulletConfig[100003]={id=100003,remark='',type=1,startEff=1000102,expEff=1000101,speed=0.5,startAudio=20000102,expAudio=20000104}
 BulletConfig[100004]={id=100004,remark='',type=1,startEff=1000102,expEff=1000101,speed=1,startAudio=20000102,expAudio=20000104}

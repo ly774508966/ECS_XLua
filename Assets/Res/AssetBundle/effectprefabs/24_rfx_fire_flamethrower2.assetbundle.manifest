@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3653254953
+CRC: 301618148
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: c3940e1e29dcfe76fe1cf147f2f5b7d3
+    Hash: 7b274429aba9d973ed8e3809eaac19a4
   TypeTreeHash:
     serializedVersion: 2
     Hash: 838c7e77bea3daaed52e41b401ae5fc0
@@ -30,7 +30,7 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/EffectPrefabs/24_RFX_Fire_FlameThrower2.prefab
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/soft_smoke.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/fire_real.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/flame_explosion_add.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/spark.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/fire_real.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/flame_explosion_add.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/soft_smoke.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/spark.assetbundle

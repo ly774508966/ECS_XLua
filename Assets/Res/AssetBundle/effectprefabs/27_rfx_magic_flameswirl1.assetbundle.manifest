@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1519046537
+CRC: 3143789204
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 6333a6a78d56b992552ddfcb58302037
+    Hash: cd03ebe02cb6a99546dadd03c0d64712
   TypeTreeHash:
     serializedVersion: 2
     Hash: 383d55ad3af26698f5cfe6be844499f3
@@ -28,9 +28,9 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/EffectPrefabs/27_RFX_Magic_FlameSwirl1.prefab
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/twirl.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/fire_real.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/flame_explosion_add.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/trajectory_flame.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/light_decal.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/spark.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/fire_real.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/flame_explosion_add.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_decal.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/spark.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/trajectory_flame.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/twirl.assetbundle

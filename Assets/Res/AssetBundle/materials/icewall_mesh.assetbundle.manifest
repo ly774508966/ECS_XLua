@@ -3,7 +3,7 @@ CRC: 1276737349
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1945406efe3d2ca9ebcfd96966b2811c
+    Hash: 9e17fde37abcf38278cb819cc6ab2c04
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6f165f44e4778b6c9d85e7a145a54cb1
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Materials/IceWall_Mesh.mat
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/textures/icewall_mesh.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/icewall_mesh.assetbundle

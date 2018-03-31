@@ -7,6 +7,7 @@ using UnityEngine;
 /// </summary>
 public class BulletGoalJust : BaseBullet
 {
+    private RaycastHit info;
     protected override void onStart()
     {
         //初始化pos
@@ -28,18 +29,21 @@ public class BulletGoalJust : BaseBullet
 
     protected override void onUpdate()
     {
+        //当前目标不存在
         bool isHave = EntityMgr.isHaveEntity(data.goalUID);
         if (!isHave)
-        {//目标不存在直接完成
+        {
             onFinish();
             return;
         }
+        //当前目标存在 每帧计算距离
+      /*
         CEntity goal = EntityMgr.getEntity(data.goalUID);
         disVec = goal.CacheTrans.position - CacheTrans.position;
         dir = disVec.normalized;
         dis = disVec.magnitude;
         CacheTrans.LookAt(goal.CacheTrans);
-        //Debug.LogError(dis);
+        Debug.DrawRay(CacheTrans.position, dir, Color.red, 0.5f);
         if (dis <= reachDis)
         {
             if (data.callBack != null)
@@ -49,7 +53,42 @@ public class BulletGoalJust : BaseBullet
             onFinish();
         }
         CacheTrans.position += dir* speed;
+        */
+
+        //每帧射线检测 有效率问题吗？
+        ///*
+        CEntity goal = EntityMgr.getEntity(data.goalUID);
+        disVec = goal.CacheTrans.position+Vector3.up - CacheTrans.position;
+        dir = disVec.normalized;
+        CacheTrans.LookAt(goal.CacheTrans.position + Vector3.up);
+        Debug.DrawRay(CacheTrans.position, dir, Color.red, 0.5f);
+        if (Physics.Raycast(CacheTrans.position, dir, out info,speed))
+        {
+            //碰撞到目标
+            CEntity hitEntity = info.collider.GetComponent<CEntity>();
+            if (hitEntity != null) {
+                if (hitEntity.UID == goal.UID) {
+                    CacheTrans.position = goal.CacheTrans.position;
+                    if (data.callBack != null)
+                    {
+                        data.callBack.Invoke(data.cfgId, data.goalUID, CacheTrans.position);
+                    }
+                    onFinish();                    
+                }
+            }
+        }
+        else {
+            CacheTrans.position += dir * speed;
+        }
+        //*/
     }
+
+    /*
+     * 备注：每帧移动距离：moveStep 
+     * 1：碰撞器高速飞行可能无法触发碰撞事件
+     * 2：每帧计算与目标的距离 可能moveStep大于判断距离 也无法准确碰撞到目标
+     * 3：每帧向运动方向进行射线检测,检测距离为moveStep,如果没有检测到碰撞,子弹移动moveStep,如果碰撞到,子弹移动到碰撞点
+     */
 
 }
 

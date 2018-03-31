@@ -3,7 +3,7 @@ CRC: 1757436352
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 52efc1049366066153d734c75df2b489
+    Hash: c26282408524336afb31a67e31b81828
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6f165f44e4778b6c9d85e7a145a54cb1
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Materials/Sword.mat
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/textures/sword.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/sword.assetbundle

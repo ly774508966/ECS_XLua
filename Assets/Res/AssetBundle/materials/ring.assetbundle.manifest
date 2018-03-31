@@ -3,7 +3,7 @@ CRC: 1832730519
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: fbbb689c9e3064499b9254aee6912b14
+    Hash: 83ad9d7e8e99c75856f03b082c22f5f9
   TypeTreeHash:
     serializedVersion: 2
     Hash: 6f165f44e4778b6c9d85e7a145a54cb1
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Materials/Ring.mat
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/textures/ring.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/ring.assetbundle

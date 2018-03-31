@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3997169483
+CRC: 278042799
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: a3e8586fbb61b0e24c5833566eb50c2a
+    Hash: 05633bd56145bc442b607104067c4f0e
   TypeTreeHash:
     serializedVersion: 2
     Hash: b1d8511fa6b0b97e3c747d2b073b1d5f
@@ -40,11 +40,11 @@ ClassTypes:
 Assets:
 - Assets/Res/Arts/Prefabs/EffectPrefabs/14_RFX_Magic_Buff1.prefab
 Dependencies:
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/light_add.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/shield.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/twinkle.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/big_circle.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/light_smoke.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/shield_floor.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/ice_decal.assetbundle
-- C:/GithubProject/ECS_XLua/Assets/Res/AssetBundle/materials/light_decal.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/big_circle.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ice_decal.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_add.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_decal.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_smoke.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/shield.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/shield_floor.assetbundle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/twinkle.assetbundle

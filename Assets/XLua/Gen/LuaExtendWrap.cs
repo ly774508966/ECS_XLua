@@ -31,13 +31,14 @@ namespace XLua.CSObjectWrap
 			Utils.EndObjectRegister(type, L, translator, null, null,
 			    null, null, null);
 
-		    Utils.BeginClassRegister(type, L, __CreateInstance, 37, 0, 0);
+		    Utils.BeginClassRegister(type, L, __CreateInstance, 38, 0, 0);
 			Utils.RegisterFunc(L, Utils.CLS_IDX, "getLUID", _m_getLUID_xlua_st_);
             Utils.RegisterFunc(L, Utils.CLS_IDX, "getSUID", _m_getSUID_xlua_st_);
             Utils.RegisterFunc(L, Utils.CLS_IDX, "getVectorAngle", _m_getVectorAngle_xlua_st_);
             Utils.RegisterFunc(L, Utils.CLS_IDX, "loadObj", _m_loadObj_xlua_st_);
             Utils.RegisterFunc(L, Utils.CLS_IDX, "destroyObj", _m_destroyObj_xlua_st_);
             Utils.RegisterFunc(L, Utils.CLS_IDX, "loadScene", _m_loadScene_xlua_st_);
+            Utils.RegisterFunc(L, Utils.CLS_IDX, "setLayer", _m_setLayer_xlua_st_);
             Utils.RegisterFunc(L, Utils.CLS_IDX, "addMillHandler", _m_addMillHandler_xlua_st_);
             Utils.RegisterFunc(L, Utils.CLS_IDX, "addSecHandler", _m_addSecHandler_xlua_st_);
             Utils.RegisterFunc(L, Utils.CLS_IDX, "addMinHandler", _m_addMinHandler_xlua_st_);
@@ -257,6 +258,48 @@ namespace XLua.CSObjectWrap
             }
             
             return LuaAPI.luaL_error(L, "invalid arguments to LuaExtend.loadScene!");
+            
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_setLayer_xlua_st_(RealStatePtr L)
+        {
+		    try {
+            
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+            
+			    int __gen_param_count = LuaAPI.lua_gettop(L);
+            
+                if(__gen_param_count == 2&& translator.Assignable<UnityEngine.GameObject>(L, 1)&& LuaTypes.LUA_TNUMBER == LuaAPI.lua_type(L, 2)) 
+                {
+                    UnityEngine.GameObject obj = (UnityEngine.GameObject)translator.GetObject(L, 1, typeof(UnityEngine.GameObject));
+                    int index = LuaAPI.xlua_tointeger(L, 2);
+                    
+                    LuaExtend.setLayer( obj, index );
+                    
+                    
+                    
+                    return 0;
+                }
+                if(__gen_param_count == 2&& translator.Assignable<UnityEngine.GameObject>(L, 1)&& (LuaAPI.lua_isnil(L, 2) || LuaAPI.lua_type(L, 2) == LuaTypes.LUA_TSTRING)) 
+                {
+                    UnityEngine.GameObject obj = (UnityEngine.GameObject)translator.GetObject(L, 1, typeof(UnityEngine.GameObject));
+                    string name = LuaAPI.lua_tostring(L, 2);
+                    
+                    LuaExtend.setLayer( obj, name );
+                    
+                    
+                    
+                    return 0;
+                }
+                
+            } catch(System.Exception __gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + __gen_e);
+            }
+            
+            return LuaAPI.luaL_error(L, "invalid arguments to LuaExtend.setLayer!");
             
         }
         
