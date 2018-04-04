@@ -15,6 +15,7 @@ public class BulletData
     public float speed = 0.5f;
     //飞行曲线 todo
     //public int flyType;
+    //long configId list<long> idlst 
     public Action<long, long,Vector3> callBack;  
 }
 

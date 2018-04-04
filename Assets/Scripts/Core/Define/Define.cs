@@ -34,11 +34,11 @@ public enum E_AssetType
 public enum E_BulletType
 {
     None = 0,
-    GoalJust,//到达目标销毁回调 #lst = 1
-    GoalExplode,//到达目标 爆炸销毁回调 lst ={ }
-    UnGoalFirst,//无目标 遇到第一个销毁回调 #lst = 1
-    UnGoalFirstExplode,//无目标 遇到第一个爆炸销毁回调 lst = { }
-    UnGoalDistance,//无目标 遇到则回调 到达则销毁
+    GoalJust,//到达目标销毁回调 #lst = 1 需要目标
+    GoalExplode,//到达目标 爆炸销毁回调 lst ={ } 需要目标
+    UnGoalFirst,//无目标 遇到第一个销毁回调 #lst = 1 不需要目标
+    UnGoalFirstExplode,//无目标 遇到第一个爆炸销毁回调 lst = { } 不需要目标
+    UnGoalDistance,//无目标 遇到则回调 到达则销毁 不需要目标
 }
 
 public static class Define
