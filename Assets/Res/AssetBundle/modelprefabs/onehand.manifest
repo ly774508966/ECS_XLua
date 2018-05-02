@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 663531656
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a21e1dbceac9a164beab73c86eaac6c4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4e70d5a4c56a60703096f7a0940b1360
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 49039ec5769cbc740bac5ce2b2027f08, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Arts/Prefabs/ModelPrefabs/OneHand.prefab
+Dependencies:
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ds_equipment_standard
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ds_skeleton_standard

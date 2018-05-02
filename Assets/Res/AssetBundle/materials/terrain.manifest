@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 686813615
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1f1c33c526b59246039e50da0be01d3d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 6f165f44e4778b6c9d85e7a145a54cb1
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Arts/Materials/terrain.mat
+Dependencies:
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/ground
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/shader/terrain

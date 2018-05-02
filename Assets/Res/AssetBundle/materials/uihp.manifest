@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2492168190
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4f62713e2353c76c741f4e65878a3d68
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 6f165f44e4778b6c9d85e7a145a54cb1
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Arts/Materials/UIHP.mat
+Dependencies:
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/textures/noisedark
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/shader/uihead

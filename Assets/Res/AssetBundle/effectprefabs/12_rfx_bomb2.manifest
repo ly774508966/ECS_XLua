@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 403003153
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fe039261a7ef1e1584f1646cc23e70ab
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5561b530b6948a2c32ffb11452233a92
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5adaa9a4c3fdef840a58462d041416de, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 760e21c6793f79a4ea96b659e2823eb6, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Arts/Prefabs/EffectPrefabs/12_RFX_Bomb2.prefab
+Dependencies:
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/broken_decal
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/fire_real
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/flame_explosion_add
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_add
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_decal
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_smoke
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/soft_smoke
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/spark_increase
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/stone_debris

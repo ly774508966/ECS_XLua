@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 1781134087
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 00d00178d1595a0024a99073de00d55b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 383d55ad3af26698f5cfe6be844499f3
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 12
+  Script: {instanceID: 0}
+- Class: 15
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 26
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5adaa9a4c3fdef840a58462d041416de, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Arts/Prefabs/EffectPrefabs/27_RFX_Magic_FlameSwirl1.prefab
+Dependencies:
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/fire_real
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/flame_explosion_add
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_decal
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/spark
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/trajectory_flame
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/twirl

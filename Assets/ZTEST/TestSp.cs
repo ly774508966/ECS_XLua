@@ -4,24 +4,31 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TestSp : MonoBehaviour {
+public class TestSp : MonoBehaviour
+{
 
     public GameObject prefabs;
     public Transform a1;
     public Transform a2;
     // Use this for initialization
-    void Start () {
-       
+    void Start()
+    {
+        AssetBundle ab = AssetBundle.LoadFromFile(Path.Combine(Application.dataPath, "Res/Art/ModelPrefabs/OneHand.prefab"));
+        UnityEngine.Object obj= ab.LoadAsset("OneHand");
+        GameObject go = GameObject.Instantiate(obj) as GameObject;
     }
-	
-	// Update is called once per frame
-	void Update () {
-        Debug.Log(Vector3.Angle((a1.position - a2.position), Vector3.right));
+
+    // Update is called once per frame
+    void Update()
+    {
+
     }
+
+
 
     IEnumerator OnClick()
     {
-        
+
         Resources.UnloadUnusedAssets();//清干净以免影响测试效果
 
         yield return new WaitForSeconds(3);

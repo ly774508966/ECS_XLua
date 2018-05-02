@@ -1,0 +1,47 @@
+ManifestFileVersion: 0
+CRC: 2683382333
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a029c0160cff6861c52055be7532ea48
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e79b8e8399bd862817edc7a4e9e99564
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5adaa9a4c3fdef840a58462d041416de, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 760e21c6793f79a4ea96b659e2823eb6, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Arts/Prefabs/EffectPrefabs/19_RFX_Cannon1.prefab
+Dependencies:
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/blood_splat
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/fire_real
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/flamebomb_explosion
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_add
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/soft_smoke
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/spark
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/wood_mesh

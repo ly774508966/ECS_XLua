@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 2360129562
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f2733e460a3b8f108b9694d49d419531
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d2d06f6caa354e2eca065a55b4d2fe17
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Arts/Prefabs/ModelPrefabs/Player_003.prefab
+Dependencies:
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ds_equipment_standard
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ds_skeleton_standard

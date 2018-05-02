@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1280497105
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0f4059e91b681f3acf3b8a5999154bc8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c73412a662fd4e4f36af34cbdf078b85
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Arts/Textures/Shine_Decal.png
+Dependencies: []

@@ -43,7 +43,7 @@ public class PoolObj : MonoBehaviour
         AssetMgr.releaseRef(url, 1);
         Obj = null;
         depends = null;
-        url = null;        
+        url = null;
     }
 
     public void OnDestroy()

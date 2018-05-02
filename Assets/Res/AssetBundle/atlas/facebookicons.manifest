@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2812294644
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 22adbd24a0f2042f615002ba6493dbfa
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 460b4f5d62b6facbccf7c01637df8f00
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Arts/Atlas/faceBookIcons/WD_xiuluo.png
+- Assets/Res/Arts/Atlas/faceBookIcons/WD_ren.png
+- Assets/Res/Arts/Atlas/faceBookIcons/WD_tian.png
+- Assets/Res/Arts/Atlas/faceBookIcons/qqqq.png
+- Assets/Res/Arts/Atlas/faceBookIcons/skill_tipsBg.png
+Dependencies: []

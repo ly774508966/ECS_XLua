@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 3279981512
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 42167768508c1f26aebfa913b6582ef4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 57cc261e7722b8429fae0fb29649ddb8
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Arts/Animators/Player_001/clip/Hit.anim
+- Assets/Res/Arts/Animators/Player_001/clip/Skill3.anim
+- Assets/Res/Arts/Animators/Player_001/clip/Skill1.anim
+- Assets/Res/Arts/Animators/Player_001/clip/Attack.anim
+- Assets/Res/Arts/Animators/Player_001/clip/Dead.anim
+- Assets/Res/Arts/Animators/Player_001/clip/Walk.anim
+- Assets/Res/Arts/Animators/Player_001/clip/Skill2.anim
+- Assets/Res/Arts/Animators/Player_001/clip/Stand.anim
+Dependencies: []

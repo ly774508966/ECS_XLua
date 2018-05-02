@@ -30,10 +30,10 @@ public class ManifestMgr
 
     public static void getDepends(string name, ref List<string> lst)
     {
-        if (!name.EndsWith(".assetbundle"))
-        {
-            name = name + ".assetbundle";
-        }
+        //if (!name.EndsWith(".assetbundle"))
+        //{
+        //    name = name + ".assetbundle";
+        //}
         name = name.ToLower();
         if (Instance.manifest != null)
         {

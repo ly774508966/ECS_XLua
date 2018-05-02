@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using UnityEngine;
 
 public class LoaderMgr
 {
@@ -26,69 +25,61 @@ public class LoaderMgr
 
     private List<string> removeLst = new List<string>();
     private Dictionary<string, LoaderTask> dictTask = new Dictionary<string, LoaderTask>();
+    private Queue<LoaderTask> loadQueue = new Queue<LoaderTask>();
 
-    public void addTask(string url, Action<string, bool, TBundle> call)
+    public void addTask(string url, Action<string, bool, TBundle> call, List<string> depends = null)
     {
         if (!dictTask.ContainsKey(url))
         {
-            List<string> depends = new List<string>();
-            ManifestMgr.getDepends(url, ref depends);
-            //先加载所有依赖
+            if (depends == null)
+            {
+                depends = new List<string>();
+                ManifestMgr.getDepends(url, ref depends);
+            }
+            //先加载所有依赖            
             for (int i = 0; i < depends.Count; i++)
             {
-                if (depends[i].EndsWith(".assetbundle")) {
-                    depends[i] = depends[i].Replace(".assetbundle", "");
+                if (!dictTask.ContainsKey(depends[i]))
+                {
+                    add(depends[i], null);
                 }
-                addTask(depends[i], null);
             }
-            LoaderTask task = new LoaderTask(url, call);
-            dictTask.Add(task.url, task);
+            add(url, call);
         }
         else
         {
-            dictTask[url].addHandler(call);            
+            dictTask[url].addHandler(call);
         }
+    }
+
+    private void add(string url, Action<string, bool, TBundle> call = null)
+    {
+        LoaderTask task = new LoaderTask(url, call);
+        dictTask.Add(task.url, task);
+        loadQueue.Enqueue(task);
     }
 
     private void removeTask(string url)
     {
-        if (!removeLst.Contains(url))
-            removeLst.Add(url);
+        if (dictTask.ContainsKey(url))
+        {
+            dictTask.Remove(url);
+        }
     }
 
     public void onTick(int count)
     {
-        for (int i = 0; i < removeLst.Count; i++)
+        if (loadQueue.Count <= 0) return;
+        LoaderTask task = loadQueue.Peek();
+        if (task.status == E_LoadStatus.Loading) return;
+        if (task.status == E_LoadStatus.Finish || task.status == E_LoadStatus.Fail)
         {
-            if (dictTask.ContainsKey(removeLst[i]))
-            {
-                dictTask.Remove(removeLst[i]);
-            }
+            removeTask(task.url);
+            loadQueue.Dequeue();
+            if (loadQueue.Count > 0)
+                task = loadQueue.Peek();
         }
-        removeLst.Clear();
-        var ier = dictTask.GetEnumerator();
-        while (ier.MoveNext())
-        {
-            //if (ier.Current.Value.status == E_LoadStatus.Wait)
-            //    ier.Current.Value.doLoad();
-            //else
-            //    removeTask(ier.Current.Value.url);
-            if (ier.Current.Value.status == E_LoadStatus.Loading)
-            {
-                return;
-            }
-            else if (ier.Current.Value.status == E_LoadStatus.Finish || ier.Current.Value.status == E_LoadStatus.Fail)
-            {
-                removeTask(ier.Current.Value.url);
-            }
-            else {
-                ier.Current.Value.doLoad();
-            }
-            
-        }
+        if (task != null && task.status == E_LoadStatus.Wait) task.doLoad();
     }
-
-
-
 }
 

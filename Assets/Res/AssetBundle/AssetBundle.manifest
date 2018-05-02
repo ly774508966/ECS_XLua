@@ -1,928 +1,931 @@
 ManifestFileVersion: 0
-CRC: 2232287813
+CRC: 3053632421
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: atlas/commonicons.assetbundle
       Dependencies: {}
     Info_1:
-      Name: atlas/playerskillicons.assetbundle
+      Name: atlas/commonicons
       Dependencies: {}
     Info_2:
-      Name: atlas/titleicons.assetbundle
+      Name: atlas/facebookicons
       Dependencies: {}
     Info_3:
-      Name: atlas/skillicons.assetbundle
+      Name: atlas/playerskillicons
       Dependencies: {}
     Info_4:
-      Name: atlas/facebookicons.assetbundle
+      Name: atlas/skillicons
       Dependencies: {}
     Info_5:
-      Name: textures/o.assetbundle
+      Name: atlas/titleicons
       Dependencies: {}
     Info_6:
-      Name: textures/sjboss_bg.assetbundle
+      Name: animators/monster_coco/clip
       Dependencies: {}
     Info_7:
-      Name: textures/zz_bg.assetbundle
+      Name: animators/player_001/clip
       Dependencies: {}
     Info_8:
-      Name: textures/106200001.assetbundle
+      Name: animators/role_mimi/clip
       Dependencies: {}
     Info_9:
-      Name: textures/noisedark.assetbundle
-      Dependencies: {}
+      Name: ac/monster_coco
+      Dependencies:
+        Dependency_0: animators/monster_coco/clip
     Info_10:
-      Name: textures/fx_tex_smoke04.assetbundle
-      Dependencies: {}
+      Name: ac/player_001
+      Dependencies:
+        Dependency_0: animators/player_001/clip
     Info_11:
-      Name: textures/bg.assetbundle
-      Dependencies: {}
+      Name: ac/role_mimi
+      Dependencies:
+        Dependency_0: animators/role_mimi/clip
     Info_12:
-      Name: textures/b.assetbundle
+      Name: roleclip/bulletexp_001
       Dependencies: {}
     Info_13:
-      Name: textures/noisewhite.assetbundle
+      Name: roleclip/bulletmoving_long
       Dependencies: {}
     Info_14:
-      Name: shader/tuidefault.assetbundle
+      Name: roleclip/bulletmoving_short
       Dependencies: {}
     Info_15:
-      Name: shader/uienergy.assetbundle
+      Name: roleclip/role_run
       Dependencies: {}
     Info_16:
-      Name: shader/terrain.assetbundle
+      Name: roleclip/role_walk
       Dependencies: {}
     Info_17:
-      Name: shader/uihead.assetbundle
+      Name: textures/106200001
       Dependencies: {}
     Info_18:
-      Name: uiprefabs/skillui.assetbundle
-      Dependencies:
-        Dependency_0: atlas/skillicons.assetbundle
-        Dependency_1: atlas/facebookicons.assetbundle
+      Name: textures/b
+      Dependencies: {}
     Info_19:
-      Name: uiprefabs/topleftui.assetbundle
+      Name: textures/beam
       Dependencies: {}
     Info_20:
-      Name: modelprefabs/player_002_hunter.assetbundle
-      Dependencies:
-        Dependency_0: materials/ds_equipment_standard.assetbundle
-        Dependency_1: materials/ds_skeleton_standard.assetbundle
+      Name: textures/bg
+      Dependencies: {}
     Info_21:
-      Name: modelprefabs/player_001.assetbundle
-      Dependencies:
-        Dependency_0: materials/ds_equipment_standard.assetbundle
-        Dependency_1: materials/ds_skeleton_standard.assetbundle
-        Dependency_2: ac/player_001.assetbundle
+      Name: textures/blood_puddle
+      Dependencies: {}
     Info_22:
-      Name: modelprefabs/player_003.assetbundle
-      Dependencies:
-        Dependency_0: materials/ds_equipment_standard.assetbundle
-        Dependency_1: materials/ds_skeleton_standard.assetbundle
+      Name: textures/blood_splat
+      Dependencies: {}
     Info_23:
-      Name: materials/uienergy.assetbundle
+      Name: textures/bubble
       Dependencies: {}
     Info_24:
-      Name: uiprefabs/bottommidui.assetbundle
-      Dependencies:
-        Dependency_0: atlas/commonicons.assetbundle
-        Dependency_1: textures/o.assetbundle
-        Dependency_2: textures/b.assetbundle
-        Dependency_3: materials/uihp.assetbundle
-        Dependency_4: materials/uimp.assetbundle
+      Name: textures/ds_skeleton_standard
+      Dependencies: {}
     Info_25:
-      Name: modelprefabs/player_004.assetbundle
-      Dependencies:
-        Dependency_0: materials/ds_equipment_standard.assetbundle
-        Dependency_1: materials/ds_skeleton_standard.assetbundle
+      Name: textures/electric_splat_hit
+      Dependencies: {}
     Info_26:
-      Name: uiprefabs/facebookui.assetbundle
-      Dependencies:
-        Dependency_0: atlas/skillicons.assetbundle
+      Name: textures/fire_real
+      Dependencies: {}
     Info_27:
-      Name: uiprefabs/joystickui.assetbundle
-      Dependencies:
-        Dependency_0: atlas/skillicons.assetbundle
+      Name: textures/flame_splat_hit
+      Dependencies: {}
     Info_28:
-      Name: materials/uihp.assetbundle
-      Dependencies:
-        Dependency_0: textures/noisedark.assetbundle
-        Dependency_1: shader/uihead.assetbundle
+      Name: textures/floor
+      Dependencies: {}
     Info_29:
-      Name: uiprefabs/bottomskillui.assetbundle
-      Dependencies:
-        Dependency_0: atlas/commonicons.assetbundle
-        Dependency_1: atlas/playerskillicons.assetbundle
+      Name: textures/fx_tex_smoke04
+      Dependencies: {}
     Info_30:
-      Name: modelprefabs/monster_1001.assetbundle
-      Dependencies:
-        Dependency_0: materials/terrain.assetbundle
+      Name: textures/glacialwall_mesh
+      Dependencies: {}
     Info_31:
-      Name: materials/uimp.assetbundle
-      Dependencies:
-        Dependency_0: textures/noisedark.assetbundle
-        Dependency_1: shader/uihead.assetbundle
+      Name: textures/ground
+      Dependencies: {}
     Info_32:
-      Name: modelprefabs/player_005.assetbundle
-      Dependencies:
-        Dependency_0: materials/ds_equipment_standard.assetbundle
-        Dependency_1: materials/ds_skeleton_standard.assetbundle
+      Name: textures/heavy_smoke
+      Dependencies: {}
     Info_33:
-      Name: uiprefabs/guildui.assetbundle
-      Dependencies:
-        Dependency_0: atlas/skillicons.assetbundle
+      Name: textures/icewall_mesh
+      Dependencies: {}
     Info_34:
-      Name: materials/terrain.assetbundle
-      Dependencies:
-        Dependency_0: shader/terrain.assetbundle
-        Dependency_1: textures/ground.assetbundle
+      Name: textures/ice_floor
+      Dependencies: {}
     Info_35:
-      Name: uiprefabs/updownanimui.assetbundle
-      Dependencies:
-        Dependency_0: atlas/facebookicons.assetbundle
+      Name: textures/leaf
+      Dependencies: {}
     Info_36:
-      Name: modelprefabs/player_002.assetbundle
-      Dependencies:
-        Dependency_0: materials/ds_equipment_standard.assetbundle
-        Dependency_1: materials/ds_skeleton_standard.assetbundle
+      Name: textures/light3
+      Dependencies: {}
     Info_37:
-      Name: textures/ground.assetbundle
+      Name: textures/noisedark
       Dependencies: {}
     Info_38:
-      Name: modelprefabs/onehand.assetbundle
-      Dependencies:
-        Dependency_0: materials/ds_equipment_standard.assetbundle
-        Dependency_1: materials/ds_skeleton_standard.assetbundle
+      Name: textures/noisewhite
+      Dependencies: {}
     Info_39:
-      Name: animators/player_001/clip.assetbundle
+      Name: textures/o
       Dependencies: {}
     Info_40:
-      Name: textures/ds_skeleton_standard.assetbundle
+      Name: textures/pulse_smoke
       Dependencies: {}
     Info_41:
-      Name: materials/ds_equipment_standard.assetbundle
+      Name: textures/pulse_stretch
       Dependencies: {}
     Info_42:
-      Name: materials/ds_skeleton_standard.assetbundle
-      Dependencies:
-        Dependency_0: textures/ds_skeleton_standard.assetbundle
+      Name: textures/pulse_stretch_m
+      Dependencies: {}
     Info_43:
-      Name: ac/player_001.assetbundle
-      Dependencies:
-        Dependency_0: animators/player_001/clip.assetbundle
+      Name: textures/pulse_wave
+      Dependencies: {}
     Info_44:
-      Name: animators/role_mimi/clip.assetbundle
+      Name: textures/rhombus
       Dependencies: {}
     Info_45:
-      Name: textures/role_mimi.assetbundle
+      Name: textures/ring
       Dependencies: {}
     Info_46:
-      Name: materials/role_mimi.assetbundle
-      Dependencies:
-        Dependency_0: textures/role_mimi.assetbundle
+      Name: textures/role_mimi
+      Dependencies: {}
     Info_47:
-      Name: modelprefabs/role_mimi.assetbundle
-      Dependencies:
-        Dependency_0: materials/role_mimi.assetbundle
-        Dependency_1: ac/role_mimi.assetbundle
+      Name: textures/shield_floor
+      Dependencies: {}
     Info_48:
-      Name: modelprefabs/role_cap.assetbundle
+      Name: textures/shine_decal
       Dependencies: {}
     Info_49:
-      Name: roleclip/role_run.assetbundle
+      Name: textures/sjboss_bg
       Dependencies: {}
     Info_50:
-      Name: roleclip/role_walk.assetbundle
+      Name: textures/smoke
       Dependencies: {}
     Info_51:
-      Name: ac/role_mimi.assetbundle
-      Dependencies:
-        Dependency_0: animators/role_mimi/clip.assetbundle
+      Name: textures/soft_smoke
+      Dependencies: {}
     Info_52:
-      Name: textures/beam.assetbundle
+      Name: textures/soil_decal
       Dependencies: {}
     Info_53:
-      Name: textures/blood_puddle.assetbundle
+      Name: textures/spark_increase
       Dependencies: {}
     Info_54:
-      Name: textures/blood_splat.assetbundle
+      Name: textures/stone_debris
       Dependencies: {}
     Info_55:
-      Name: textures/bubble.assetbundle
+      Name: textures/stretch_hit01
       Dependencies: {}
     Info_56:
-      Name: textures/electric_splat_hit.assetbundle
+      Name: textures/swirl_smoke
       Dependencies: {}
     Info_57:
-      Name: textures/fire_real.assetbundle
+      Name: textures/sword
       Dependencies: {}
     Info_58:
-      Name: textures/flame_splat_hit.assetbundle
+      Name: textures/trajectory_blur
       Dependencies: {}
     Info_59:
-      Name: textures/floor.assetbundle
+      Name: textures/trajectory_electro
       Dependencies: {}
     Info_60:
-      Name: textures/glacialwall_mesh.assetbundle
+      Name: textures/trajectory_flame
       Dependencies: {}
     Info_61:
-      Name: textures/heavy_smoke.assetbundle
+      Name: textures/wood_mesh
       Dependencies: {}
     Info_62:
-      Name: textures/icewall_mesh.assetbundle
+      Name: textures/zz_bg
       Dependencies: {}
     Info_63:
-      Name: textures/ice_floor.assetbundle
-      Dependencies: {}
+      Name: materials/beam
+      Dependencies:
+        Dependency_0: textures/beam
     Info_64:
-      Name: textures/leaf.assetbundle
+      Name: materials/big_circle
       Dependencies: {}
     Info_65:
-      Name: textures/light3.assetbundle
+      Name: materials/blackhole
       Dependencies: {}
     Info_66:
-      Name: textures/pulse_smoke.assetbundle
-      Dependencies: {}
+      Name: materials/blood_puddle
+      Dependencies:
+        Dependency_0: textures/blood_puddle
     Info_67:
-      Name: textures/pulse_stretch.assetbundle
-      Dependencies: {}
+      Name: materials/blood_splat
+      Dependencies:
+        Dependency_0: textures/blood_splat
     Info_68:
-      Name: textures/pulse_stretch_m.assetbundle
+      Name: materials/broken_decal
       Dependencies: {}
     Info_69:
-      Name: textures/pulse_wave.assetbundle
-      Dependencies: {}
+      Name: materials/bubble
+      Dependencies:
+        Dependency_0: textures/bubble
     Info_70:
-      Name: textures/rhombus.assetbundle
+      Name: materials/circle
       Dependencies: {}
     Info_71:
-      Name: textures/ring.assetbundle
+      Name: materials/circle2
       Dependencies: {}
     Info_72:
-      Name: textures/shield_floor.assetbundle
+      Name: materials/ds_equipment_standard
       Dependencies: {}
     Info_73:
-      Name: textures/shine_decal.assetbundle
-      Dependencies: {}
+      Name: materials/ds_skeleton_standard
+      Dependencies:
+        Dependency_0: textures/ds_skeleton_standard
     Info_74:
-      Name: textures/smoke.assetbundle
+      Name: materials/electricbomb_explosion
       Dependencies: {}
     Info_75:
-      Name: textures/soft_smoke.assetbundle
+      Name: materials/electricbomb_explosion_add
       Dependencies: {}
     Info_76:
-      Name: textures/soil_decal.assetbundle
-      Dependencies: {}
+      Name: materials/electric_splat_hit
+      Dependencies:
+        Dependency_0: textures/electric_splat_hit
     Info_77:
-      Name: textures/spark_increase.assetbundle
-      Dependencies: {}
+      Name: materials/electric_splat_hit_add
+      Dependencies:
+        Dependency_0: textures/electric_splat_hit
     Info_78:
-      Name: textures/stone_debris.assetbundle
+      Name: materials/fire01
       Dependencies: {}
     Info_79:
-      Name: textures/stretch_hit01.assetbundle
-      Dependencies: {}
+      Name: materials/fire_real
+      Dependencies:
+        Dependency_0: textures/fire_real
     Info_80:
-      Name: textures/swirl_smoke.assetbundle
+      Name: materials/fire_smoke01
       Dependencies: {}
     Info_81:
-      Name: textures/sword.assetbundle
+      Name: materials/flamebomb_explosion
       Dependencies: {}
     Info_82:
-      Name: textures/trajectory_blur.assetbundle
+      Name: materials/flame_explosion
       Dependencies: {}
     Info_83:
-      Name: textures/trajectory_electro.assetbundle
+      Name: materials/flame_explosion_add
       Dependencies: {}
     Info_84:
-      Name: textures/trajectory_flame.assetbundle
-      Dependencies: {}
-    Info_85:
-      Name: textures/wood_mesh.assetbundle
-      Dependencies: {}
-    Info_86:
-      Name: materials/beam.assetbundle
+      Name: materials/flame_splat_hit
       Dependencies:
-        Dependency_0: textures/beam.assetbundle
-    Info_87:
-      Name: materials/big_circle.assetbundle
+        Dependency_0: textures/flame_splat_hit
+    Info_85:
+      Name: materials/floor
+      Dependencies:
+        Dependency_0: textures/floor
+    Info_86:
+      Name: materials/floor_bg
       Dependencies: {}
+    Info_87:
+      Name: materials/glacialwall_mesh
+      Dependencies:
+        Dependency_0: textures/glacialwall_mesh
     Info_88:
-      Name: materials/blackhole.assetbundle
+      Name: materials/greenlight_broken_decal
       Dependencies: {}
     Info_89:
-      Name: materials/blood_puddle.assetbundle
-      Dependencies:
-        Dependency_0: textures/blood_puddle.assetbundle
+      Name: materials/heal_decal
+      Dependencies: {}
     Info_90:
-      Name: materials/blood_splat.assetbundle
+      Name: materials/heavy_smoke
       Dependencies:
-        Dependency_0: textures/blood_splat.assetbundle
+        Dependency_0: textures/heavy_smoke
     Info_91:
-      Name: materials/broken_decal.assetbundle
-      Dependencies: {}
-    Info_92:
-      Name: materials/bubble.assetbundle
+      Name: materials/icewall_mesh
       Dependencies:
-        Dependency_0: textures/bubble.assetbundle
+        Dependency_0: textures/icewall_mesh
+    Info_92:
+      Name: materials/ice_decal
+      Dependencies: {}
     Info_93:
-      Name: materials/circle.assetbundle
-      Dependencies: {}
+      Name: materials/ice_floor
+      Dependencies:
+        Dependency_0: textures/ice_floor
     Info_94:
-      Name: materials/circle2.assetbundle
-      Dependencies: {}
+      Name: materials/leaf
+      Dependencies:
+        Dependency_0: textures/leaf
     Info_95:
-      Name: materials/electricbomb_explosion.assetbundle
+      Name: materials/light
       Dependencies: {}
     Info_96:
-      Name: materials/electricbomb_explosion_add.assetbundle
+      Name: materials/light2
       Dependencies: {}
     Info_97:
-      Name: materials/electric_splat_hit.assetbundle
+      Name: materials/light3
       Dependencies:
-        Dependency_0: textures/electric_splat_hit.assetbundle
+        Dependency_0: textures/light3
     Info_98:
-      Name: materials/electric_splat_hit_add.assetbundle
-      Dependencies:
-        Dependency_0: textures/electric_splat_hit.assetbundle
+      Name: materials/light_add
+      Dependencies: {}
     Info_99:
-      Name: materials/fire01.assetbundle
+      Name: materials/light_decal
       Dependencies: {}
     Info_100:
-      Name: materials/fire_real.assetbundle
-      Dependencies:
-        Dependency_0: textures/fire_real.assetbundle
+      Name: materials/light_smoke
+      Dependencies: {}
     Info_101:
-      Name: materials/fire_smoke01.assetbundle
-      Dependencies: {}
+      Name: materials/monster_coco
+      Dependencies:
+        Dependency_0: textures/role_mimi
     Info_102:
-      Name: materials/flamebomb_explosion.assetbundle
-      Dependencies: {}
+      Name: materials/pulse_smoke
+      Dependencies:
+        Dependency_0: textures/pulse_smoke
     Info_103:
-      Name: materials/flame_explosion.assetbundle
-      Dependencies: {}
+      Name: materials/pulse_stretch
+      Dependencies:
+        Dependency_0: textures/pulse_stretch
     Info_104:
-      Name: materials/flame_explosion_add.assetbundle
-      Dependencies: {}
+      Name: materials/pulse_stretch_add
+      Dependencies:
+        Dependency_0: textures/pulse_stretch
     Info_105:
-      Name: materials/flame_splat_hit.assetbundle
+      Name: materials/pulse_stretch_m
       Dependencies:
-        Dependency_0: textures/flame_splat_hit.assetbundle
+        Dependency_0: textures/pulse_stretch_m
     Info_106:
-      Name: materials/floor.assetbundle
+      Name: materials/pulse_wave
       Dependencies:
-        Dependency_0: textures/floor.assetbundle
+        Dependency_0: textures/pulse_wave
     Info_107:
-      Name: materials/floor_bg.assetbundle
-      Dependencies: {}
-    Info_108:
-      Name: materials/glacialwall_mesh.assetbundle
+      Name: materials/rhombus
       Dependencies:
-        Dependency_0: textures/glacialwall_mesh.assetbundle
+        Dependency_0: textures/rhombus
+    Info_108:
+      Name: materials/ring
+      Dependencies:
+        Dependency_0: textures/ring
     Info_109:
-      Name: materials/greenlight_broken_decal.assetbundle
-      Dependencies: {}
+      Name: materials/role_mimi
+      Dependencies:
+        Dependency_0: textures/role_mimi
     Info_110:
-      Name: materials/heal_decal.assetbundle
+      Name: materials/shield
       Dependencies: {}
     Info_111:
-      Name: materials/heavy_smoke.assetbundle
+      Name: materials/shield_floor
       Dependencies:
-        Dependency_0: textures/heavy_smoke.assetbundle
+        Dependency_0: textures/shield_floor
     Info_112:
-      Name: materials/icewall_mesh.assetbundle
+      Name: materials/shine_decal1
       Dependencies:
-        Dependency_0: textures/icewall_mesh.assetbundle
+        Dependency_0: textures/shine_decal
     Info_113:
-      Name: materials/ice_decal.assetbundle
-      Dependencies: {}
+      Name: materials/shine_decal2
+      Dependencies:
+        Dependency_0: textures/shine_decal
     Info_114:
-      Name: materials/ice_floor.assetbundle
+      Name: materials/shine_decal3
       Dependencies:
-        Dependency_0: textures/ice_floor.assetbundle
+        Dependency_0: textures/shine_decal
     Info_115:
-      Name: materials/leaf.assetbundle
+      Name: materials/shine_decal4
       Dependencies:
-        Dependency_0: textures/leaf.assetbundle
+        Dependency_0: textures/shine_decal
     Info_116:
-      Name: materials/light.assetbundle
-      Dependencies: {}
-    Info_117:
-      Name: materials/light2.assetbundle
-      Dependencies: {}
-    Info_118:
-      Name: materials/light3.assetbundle
+      Name: materials/smoke
       Dependencies:
-        Dependency_0: textures/light3.assetbundle
+        Dependency_0: textures/smoke
+    Info_117:
+      Name: materials/soft_smoke
+      Dependencies:
+        Dependency_0: textures/soft_smoke
+    Info_118:
+      Name: materials/soil_decal
+      Dependencies:
+        Dependency_0: textures/soil_decal
     Info_119:
-      Name: materials/light_add.assetbundle
+      Name: materials/soot_decal
       Dependencies: {}
     Info_120:
-      Name: materials/light_decal.assetbundle
+      Name: materials/spark
       Dependencies: {}
     Info_121:
-      Name: materials/light_smoke.assetbundle
-      Dependencies: {}
+      Name: materials/spark_increase
+      Dependencies:
+        Dependency_0: textures/spark_increase
     Info_122:
-      Name: materials/pulse_smoke.assetbundle
+      Name: materials/stone_debris
       Dependencies:
-        Dependency_0: textures/pulse_smoke.assetbundle
+        Dependency_0: textures/stone_debris
     Info_123:
-      Name: materials/pulse_stretch.assetbundle
+      Name: materials/stretch_hit01
       Dependencies:
-        Dependency_0: textures/pulse_stretch.assetbundle
+        Dependency_0: textures/stretch_hit01
     Info_124:
-      Name: materials/pulse_stretch_add.assetbundle
+      Name: materials/swirl_smoke
       Dependencies:
-        Dependency_0: textures/pulse_stretch.assetbundle
+        Dependency_0: textures/swirl_smoke
     Info_125:
-      Name: materials/pulse_stretch_m.assetbundle
+      Name: materials/sword
       Dependencies:
-        Dependency_0: textures/pulse_stretch_m.assetbundle
+        Dependency_0: textures/sword
     Info_126:
-      Name: materials/pulse_wave.assetbundle
+      Name: materials/terrain
       Dependencies:
-        Dependency_0: textures/pulse_wave.assetbundle
+        Dependency_0: textures/ground
+        Dependency_1: shader/terrain
     Info_127:
-      Name: materials/rhombus.assetbundle
+      Name: materials/trajectory_blur
       Dependencies:
-        Dependency_0: textures/rhombus.assetbundle
+        Dependency_0: textures/trajectory_blur
     Info_128:
-      Name: materials/ring.assetbundle
+      Name: materials/trajectory_electro
       Dependencies:
-        Dependency_0: textures/ring.assetbundle
+        Dependency_0: textures/trajectory_electro
     Info_129:
-      Name: materials/shield.assetbundle
-      Dependencies: {}
+      Name: materials/trajectory_flame
+      Dependencies:
+        Dependency_0: textures/trajectory_flame
     Info_130:
-      Name: materials/shield_floor.assetbundle
+      Name: materials/trajectory_flame_add
       Dependencies:
-        Dependency_0: textures/shield_floor.assetbundle
+        Dependency_0: textures/trajectory_flame
     Info_131:
-      Name: materials/shine_decal1.assetbundle
-      Dependencies:
-        Dependency_0: textures/shine_decal.assetbundle
+      Name: materials/twinkle
+      Dependencies: {}
     Info_132:
-      Name: materials/shine_decal2.assetbundle
-      Dependencies:
-        Dependency_0: textures/shine_decal.assetbundle
+      Name: materials/twirl
+      Dependencies: {}
     Info_133:
-      Name: materials/shine_decal3.assetbundle
-      Dependencies:
-        Dependency_0: textures/shine_decal.assetbundle
+      Name: materials/uienergy
+      Dependencies: {}
     Info_134:
-      Name: materials/shine_decal4.assetbundle
+      Name: materials/uihp
       Dependencies:
-        Dependency_0: textures/shine_decal.assetbundle
+        Dependency_0: textures/noisedark
+        Dependency_1: shader/uihead
     Info_135:
-      Name: materials/smoke.assetbundle
+      Name: materials/uimp
       Dependencies:
-        Dependency_0: textures/smoke.assetbundle
+        Dependency_0: textures/noisedark
+        Dependency_1: shader/uihead
     Info_136:
-      Name: materials/soft_smoke.assetbundle
-      Dependencies:
-        Dependency_0: textures/soft_smoke.assetbundle
+      Name: materials/water_splash
+      Dependencies: {}
     Info_137:
-      Name: materials/soil_decal.assetbundle
+      Name: materials/wood_mesh
       Dependencies:
-        Dependency_0: textures/soil_decal.assetbundle
+        Dependency_0: textures/wood_mesh
     Info_138:
-      Name: materials/soot_decal.assetbundle
+      Name: shader/terrain
       Dependencies: {}
     Info_139:
-      Name: materials/spark.assetbundle
+      Name: shader/tuidefault
       Dependencies: {}
     Info_140:
-      Name: materials/spark_increase.assetbundle
-      Dependencies:
-        Dependency_0: textures/spark_increase.assetbundle
+      Name: shader/uienergy
+      Dependencies: {}
     Info_141:
-      Name: materials/stone_debris.assetbundle
-      Dependencies:
-        Dependency_0: textures/stone_debris.assetbundle
+      Name: shader/uihead
+      Dependencies: {}
     Info_142:
-      Name: materials/stretch_hit01.assetbundle
+      Name: effectprefabs/10_rfx_hitsplat4
       Dependencies:
-        Dependency_0: textures/stretch_hit01.assetbundle
+        Dependency_0: materials/ice_floor
+        Dependency_1: materials/light_smoke
+        Dependency_2: materials/soft_smoke
+        Dependency_3: materials/spark
+        Dependency_4: materials/stone_debris
+        Dependency_5: materials/stretch_hit01
     Info_143:
-      Name: materials/swirl_smoke.assetbundle
+      Name: effectprefabs/11_rfx_bomb1
       Dependencies:
-        Dependency_0: textures/swirl_smoke.assetbundle
+        Dependency_0: materials/broken_decal
+        Dependency_1: materials/flamebomb_explosion
+        Dependency_2: materials/flame_splat_hit
+        Dependency_3: materials/light_add
+        Dependency_4: materials/light_decal
+        Dependency_5: materials/smoke
+        Dependency_6: materials/spark
+        Dependency_7: materials/stone_debris
     Info_144:
-      Name: materials/sword.assetbundle
+      Name: effectprefabs/12_rfx_bomb2
       Dependencies:
-        Dependency_0: textures/sword.assetbundle
+        Dependency_0: materials/broken_decal
+        Dependency_1: materials/fire_real
+        Dependency_2: materials/flame_explosion_add
+        Dependency_3: materials/light_add
+        Dependency_4: materials/light_decal
+        Dependency_5: materials/light_smoke
+        Dependency_6: materials/soft_smoke
+        Dependency_7: materials/spark_increase
+        Dependency_8: materials/stone_debris
     Info_145:
-      Name: materials/trajectory_blur.assetbundle
+      Name: effectprefabs/13_rfx_bomb3
       Dependencies:
-        Dependency_0: textures/trajectory_blur.assetbundle
+        Dependency_0: materials/fire_real
+        Dependency_1: materials/ice_floor
+        Dependency_2: materials/light_add
+        Dependency_3: materials/light_smoke
+        Dependency_4: materials/soft_smoke
+        Dependency_5: materials/spark_increase
+        Dependency_6: materials/stone_debris
     Info_146:
-      Name: materials/trajectory_electro.assetbundle
+      Name: effectprefabs/14_rfx_magic_buff1
       Dependencies:
-        Dependency_0: textures/trajectory_electro.assetbundle
+        Dependency_0: materials/big_circle
+        Dependency_1: materials/ice_decal
+        Dependency_2: materials/light_add
+        Dependency_3: materials/light_decal
+        Dependency_4: materials/light_smoke
+        Dependency_5: materials/shield
+        Dependency_6: materials/shield_floor
+        Dependency_7: materials/twinkle
     Info_147:
-      Name: materials/trajectory_flame.assetbundle
+      Name: effectprefabs/15_rfx_magic_buff2
       Dependencies:
-        Dependency_0: textures/trajectory_flame.assetbundle
+        Dependency_0: materials/heal_decal
+        Dependency_1: materials/light_decal
+        Dependency_2: materials/spark
+        Dependency_3: materials/twinkle
     Info_148:
-      Name: materials/trajectory_flame_add.assetbundle
+      Name: effectprefabs/16_rfx_magic_buff3
       Dependencies:
-        Dependency_0: textures/trajectory_flame.assetbundle
+        Dependency_0: materials/electric_splat_hit
+        Dependency_1: materials/flame_explosion
+        Dependency_2: materials/heal_decal
+        Dependency_3: materials/light
+        Dependency_4: materials/light_add
+        Dependency_5: materials/light_decal
+        Dependency_6: materials/spark
+        Dependency_7: materials/twinkle
     Info_149:
-      Name: materials/twinkle.assetbundle
-      Dependencies: {}
+      Name: effectprefabs/17_rfx_bomb4
+      Dependencies:
+        Dependency_0: materials/fire_real
+        Dependency_1: materials/ice_floor
+        Dependency_2: materials/soft_smoke
+        Dependency_3: materials/spark_increase
+        Dependency_4: materials/stone_debris
     Info_150:
-      Name: materials/twirl.assetbundle
-      Dependencies: {}
+      Name: effectprefabs/18_rfx_bomb5
+      Dependencies:
+        Dependency_0: materials/broken_decal
+        Dependency_1: materials/fire_real
+        Dependency_2: materials/flame_explosion_add
+        Dependency_3: materials/heavy_smoke
+        Dependency_4: materials/light_add
+        Dependency_5: materials/light_decal
+        Dependency_6: materials/soft_smoke
+        Dependency_7: materials/spark_increase
+        Dependency_8: materials/stone_debris
+        Dependency_9: materials/stretch_hit01
     Info_151:
-      Name: materials/water_splash.assetbundle
-      Dependencies: {}
+      Name: effectprefabs/19_rfx_cannon1
+      Dependencies:
+        Dependency_0: materials/blood_splat
+        Dependency_1: materials/fire_real
+        Dependency_2: materials/flamebomb_explosion
+        Dependency_3: materials/light_add
+        Dependency_4: materials/soft_smoke
+        Dependency_5: materials/spark
+        Dependency_6: materials/wood_mesh
     Info_152:
-      Name: materials/wood_mesh.assetbundle
+      Name: effectprefabs/1_rfx_hitblood1
       Dependencies:
-        Dependency_0: textures/wood_mesh.assetbundle
+        Dependency_0: materials/blood_splat
+        Dependency_1: materials/flamebomb_explosion
+        Dependency_2: materials/light
+        Dependency_3: materials/spark
     Info_153:
-      Name: effectprefabs/10_rfx_hitsplat4.assetbundle
+      Name: effectprefabs/20_rfx_spark1
       Dependencies:
-        Dependency_0: materials/ice_floor.assetbundle
-        Dependency_1: materials/light_smoke.assetbundle
-        Dependency_2: materials/soft_smoke.assetbundle
-        Dependency_3: materials/spark.assetbundle
-        Dependency_4: materials/stone_debris.assetbundle
-        Dependency_5: materials/stretch_hit01.assetbundle
+        Dependency_0: materials/light_add
+        Dependency_1: materials/soft_smoke
+        Dependency_2: materials/spark
     Info_154:
-      Name: effectprefabs/11_rfx_bomb1.assetbundle
+      Name: effectprefabs/21_rfx_spark2
       Dependencies:
-        Dependency_0: materials/broken_decal.assetbundle
-        Dependency_1: materials/flamebomb_explosion.assetbundle
-        Dependency_2: materials/flame_splat_hit.assetbundle
-        Dependency_3: materials/light_add.assetbundle
-        Dependency_4: materials/light_decal.assetbundle
-        Dependency_5: materials/smoke.assetbundle
-        Dependency_6: materials/spark.assetbundle
-        Dependency_7: materials/stone_debris.assetbundle
+        Dependency_0: materials/light_add
+        Dependency_1: materials/soft_smoke
+        Dependency_2: materials/spark
     Info_155:
-      Name: effectprefabs/12_rfx_bomb2.assetbundle
+      Name: effectprefabs/22_rfx_fire_campfire1
       Dependencies:
-        Dependency_0: materials/broken_decal.assetbundle
-        Dependency_1: materials/fire_real.assetbundle
-        Dependency_2: materials/flame_explosion_add.assetbundle
-        Dependency_3: materials/light_add.assetbundle
-        Dependency_4: materials/light_decal.assetbundle
-        Dependency_5: materials/light_smoke.assetbundle
-        Dependency_6: materials/soft_smoke.assetbundle
-        Dependency_7: materials/spark_increase.assetbundle
-        Dependency_8: materials/stone_debris.assetbundle
+        Dependency_0: materials/fire_real
+        Dependency_1: materials/light
+        Dependency_2: materials/spark_increase
+        Dependency_3: materials/wood_mesh
     Info_156:
-      Name: effectprefabs/13_rfx_bomb3.assetbundle
+      Name: effectprefabs/23_rfx_fire_flamethrower1
       Dependencies:
-        Dependency_0: materials/fire_real.assetbundle
-        Dependency_1: materials/ice_floor.assetbundle
-        Dependency_2: materials/light_add.assetbundle
-        Dependency_3: materials/light_smoke.assetbundle
-        Dependency_4: materials/soft_smoke.assetbundle
-        Dependency_5: materials/spark_increase.assetbundle
-        Dependency_6: materials/stone_debris.assetbundle
+        Dependency_0: materials/fire_real
+        Dependency_1: materials/flame_explosion_add
+        Dependency_2: materials/spark
     Info_157:
-      Name: effectprefabs/14_rfx_magic_buff1.assetbundle
+      Name: effectprefabs/24_rfx_fire_flamethrower2
       Dependencies:
-        Dependency_0: materials/big_circle.assetbundle
-        Dependency_1: materials/ice_decal.assetbundle
-        Dependency_2: materials/light_add.assetbundle
-        Dependency_3: materials/light_decal.assetbundle
-        Dependency_4: materials/light_smoke.assetbundle
-        Dependency_5: materials/shield.assetbundle
-        Dependency_6: materials/shield_floor.assetbundle
-        Dependency_7: materials/twinkle.assetbundle
+        Dependency_0: materials/fire_real
+        Dependency_1: materials/flame_explosion_add
+        Dependency_2: materials/soft_smoke
+        Dependency_3: materials/spark
     Info_158:
-      Name: effectprefabs/15_rfx_magic_buff2.assetbundle
+      Name: effectprefabs/25_rfx_fire_heavyflame1
       Dependencies:
-        Dependency_0: materials/heal_decal.assetbundle
-        Dependency_1: materials/light_decal.assetbundle
-        Dependency_2: materials/spark.assetbundle
-        Dependency_3: materials/twinkle.assetbundle
+        Dependency_0: materials/fire_real
+        Dependency_1: materials/heavy_smoke
+        Dependency_2: materials/light
+        Dependency_3: materials/light_add
+        Dependency_4: materials/soft_smoke
+        Dependency_5: materials/spark_increase
     Info_159:
-      Name: effectprefabs/16_rfx_magic_buff3.assetbundle
+      Name: effectprefabs/26_rfx_magic_darkswirl1
       Dependencies:
-        Dependency_0: materials/electric_splat_hit.assetbundle
-        Dependency_1: materials/flame_explosion.assetbundle
-        Dependency_2: materials/heal_decal.assetbundle
-        Dependency_3: materials/light.assetbundle
-        Dependency_4: materials/light_add.assetbundle
-        Dependency_5: materials/light_decal.assetbundle
-        Dependency_6: materials/spark.assetbundle
-        Dependency_7: materials/twinkle.assetbundle
+        Dependency_0: materials/bubble
+        Dependency_1: materials/circle2
+        Dependency_2: materials/floor
+        Dependency_3: materials/light_decal
+        Dependency_4: materials/smoke
     Info_160:
-      Name: effectprefabs/17_rfx_bomb4.assetbundle
+      Name: effectprefabs/27_rfx_magic_flameswirl1
       Dependencies:
-        Dependency_0: materials/fire_real.assetbundle
-        Dependency_1: materials/ice_floor.assetbundle
-        Dependency_2: materials/soft_smoke.assetbundle
-        Dependency_3: materials/spark_increase.assetbundle
-        Dependency_4: materials/stone_debris.assetbundle
+        Dependency_0: materials/fire_real
+        Dependency_1: materials/flame_explosion_add
+        Dependency_2: materials/light_decal
+        Dependency_3: materials/spark
+        Dependency_4: materials/trajectory_flame
+        Dependency_5: materials/twirl
     Info_161:
-      Name: effectprefabs/18_rfx_bomb5.assetbundle
+      Name: effectprefabs/28_rfx_magic_greenlava1
       Dependencies:
-        Dependency_0: materials/broken_decal.assetbundle
-        Dependency_1: materials/fire_real.assetbundle
-        Dependency_2: materials/flame_explosion_add.assetbundle
-        Dependency_3: materials/heavy_smoke.assetbundle
-        Dependency_4: materials/light_add.assetbundle
-        Dependency_5: materials/light_decal.assetbundle
-        Dependency_6: materials/soft_smoke.assetbundle
-        Dependency_7: materials/spark_increase.assetbundle
-        Dependency_8: materials/stone_debris.assetbundle
-        Dependency_9: materials/stretch_hit01.assetbundle
+        Dependency_0: materials/electricbomb_explosion_add
+        Dependency_1: materials/fire_real
+        Dependency_2: materials/greenlight_broken_decal
+        Dependency_3: materials/light
+        Dependency_4: materials/pulse_smoke
+        Dependency_5: materials/spark_increase
+        Dependency_6: materials/twinkle
     Info_162:
-      Name: effectprefabs/19_rfx_cannon1.assetbundle
+      Name: effectprefabs/29_rfx_magic_icearea1
       Dependencies:
-        Dependency_0: materials/blood_splat.assetbundle
-        Dependency_1: materials/fire_real.assetbundle
-        Dependency_2: materials/flamebomb_explosion.assetbundle
-        Dependency_3: materials/light_add.assetbundle
-        Dependency_4: materials/soft_smoke.assetbundle
-        Dependency_5: materials/spark.assetbundle
-        Dependency_6: materials/wood_mesh.assetbundle
+        Dependency_0: materials/ice_decal
+        Dependency_1: materials/ice_floor
+        Dependency_2: materials/light_add
+        Dependency_3: materials/light_smoke
     Info_163:
-      Name: effectprefabs/1_rfx_hitblood1.assetbundle
+      Name: effectprefabs/2_rfx_hitblood2
       Dependencies:
-        Dependency_0: materials/blood_splat.assetbundle
-        Dependency_1: materials/flamebomb_explosion.assetbundle
-        Dependency_2: materials/light.assetbundle
-        Dependency_3: materials/spark.assetbundle
+        Dependency_0: materials/blood_splat
+        Dependency_1: materials/flame_splat_hit
+        Dependency_2: materials/light
+        Dependency_3: materials/spark
     Info_164:
-      Name: effectprefabs/20_rfx_spark1.assetbundle
+      Name: effectprefabs/30_rfx_magic_lightteleport1
       Dependencies:
-        Dependency_0: materials/light_add.assetbundle
-        Dependency_1: materials/soft_smoke.assetbundle
-        Dependency_2: materials/spark.assetbundle
+        Dependency_0: materials/broken_decal
+        Dependency_1: materials/fire_real
+        Dependency_2: materials/heal_decal
+        Dependency_3: materials/light_add
+        Dependency_4: materials/light_decal
+        Dependency_5: materials/pulse_smoke
+        Dependency_6: materials/spark
+        Dependency_7: materials/trajectory_blur
+        Dependency_8: materials/trajectory_electro
+        Dependency_9: materials/twinkle
     Info_165:
-      Name: effectprefabs/21_rfx_spark2.assetbundle
+      Name: effectprefabs/31_rfx_magic_pulse1
       Dependencies:
-        Dependency_0: materials/light_add.assetbundle
-        Dependency_1: materials/soft_smoke.assetbundle
-        Dependency_2: materials/spark.assetbundle
+        Dependency_0: materials/blackhole
+        Dependency_1: materials/ice_decal
+        Dependency_2: materials/light_add
+        Dependency_3: materials/light_decal
+        Dependency_4: materials/spark
+        Dependency_5: materials/twinkle
+        Dependency_6: materials/twirl
     Info_166:
-      Name: effectprefabs/22_rfx_fire_campfire1.assetbundle
+      Name: effectprefabs/32_rfx_magic_rock1
       Dependencies:
-        Dependency_0: materials/fire_real.assetbundle
-        Dependency_1: materials/light.assetbundle
-        Dependency_2: materials/spark_increase.assetbundle
-        Dependency_3: materials/wood_mesh.assetbundle
+        Dependency_0: materials/broken_decal
+        Dependency_1: materials/electric_splat_hit
+        Dependency_2: materials/flamebomb_explosion
+        Dependency_3: materials/glacialwall_mesh
+        Dependency_4: materials/light_add
+        Dependency_5: materials/light_decal
+        Dependency_6: materials/smoke
+        Dependency_7: materials/spark_increase
+        Dependency_8: materials/stone_debris
     Info_167:
-      Name: effectprefabs/23_rfx_fire_flamethrower1.assetbundle
+      Name: effectprefabs/33_rfx_muzzleflash1
       Dependencies:
-        Dependency_0: materials/fire_real.assetbundle
-        Dependency_1: materials/flame_explosion_add.assetbundle
-        Dependency_2: materials/spark.assetbundle
+        Dependency_0: materials/flamebomb_explosion
+        Dependency_1: materials/flame_explosion_add
+        Dependency_2: materials/light_add
+        Dependency_3: materials/smoke
+        Dependency_4: materials/spark
+        Dependency_5: materials/stretch_hit01
     Info_168:
-      Name: effectprefabs/24_rfx_fire_flamethrower2.assetbundle
+      Name: effectprefabs/34_rfx_muzzleflash2
       Dependencies:
-        Dependency_0: materials/fire_real.assetbundle
-        Dependency_1: materials/flame_explosion_add.assetbundle
-        Dependency_2: materials/soft_smoke.assetbundle
-        Dependency_3: materials/spark.assetbundle
+        Dependency_0: materials/flame_explosion_add
+        Dependency_1: materials/light_add
+        Dependency_2: materials/smoke
+        Dependency_3: materials/spark
+        Dependency_4: materials/stretch_hit01
     Info_169:
-      Name: effectprefabs/25_rfx_fire_heavyflame1.assetbundle
+      Name: effectprefabs/35_rfx_muzzleflash3
       Dependencies:
-        Dependency_0: materials/fire_real.assetbundle
-        Dependency_1: materials/heavy_smoke.assetbundle
-        Dependency_2: materials/light.assetbundle
-        Dependency_3: materials/light_add.assetbundle
-        Dependency_4: materials/soft_smoke.assetbundle
-        Dependency_5: materials/spark_increase.assetbundle
+        Dependency_0: materials/beam
+        Dependency_1: materials/circle2
+        Dependency_2: materials/flame_explosion_add
+        Dependency_3: materials/light_add
+        Dependency_4: materials/spark
+        Dependency_5: materials/trajectory_electro
     Info_170:
-      Name: effectprefabs/26_rfx_magic_darkswirl1.assetbundle
+      Name: effectprefabs/36_rfx_nature_rain1
       Dependencies:
-        Dependency_0: materials/bubble.assetbundle
-        Dependency_1: materials/circle2.assetbundle
-        Dependency_2: materials/floor.assetbundle
-        Dependency_3: materials/light_decal.assetbundle
-        Dependency_4: materials/smoke.assetbundle
+        Dependency_0: materials/circle
+        Dependency_1: materials/pulse_wave
+        Dependency_2: materials/ring
     Info_171:
-      Name: effectprefabs/27_rfx_magic_flameswirl1.assetbundle
+      Name: effectprefabs/37_rfx_nature_rain2
       Dependencies:
-        Dependency_0: materials/fire_real.assetbundle
-        Dependency_1: materials/flame_explosion_add.assetbundle
-        Dependency_2: materials/light_decal.assetbundle
-        Dependency_3: materials/spark.assetbundle
-        Dependency_4: materials/trajectory_flame.assetbundle
-        Dependency_5: materials/twirl.assetbundle
+        Dependency_0: materials/circle
+        Dependency_1: materials/light
+        Dependency_2: materials/pulse_wave
+        Dependency_3: materials/water_splash
     Info_172:
-      Name: effectprefabs/28_rfx_magic_greenlava1.assetbundle
+      Name: effectprefabs/38_rfx_nature_snowyfield1
       Dependencies:
-        Dependency_0: materials/electricbomb_explosion_add.assetbundle
-        Dependency_1: materials/fire_real.assetbundle
-        Dependency_2: materials/greenlight_broken_decal.assetbundle
-        Dependency_3: materials/light.assetbundle
-        Dependency_4: materials/pulse_smoke.assetbundle
-        Dependency_5: materials/spark_increase.assetbundle
-        Dependency_6: materials/twinkle.assetbundle
+        Dependency_0: materials/circle
+        Dependency_1: materials/ice_decal
+        Dependency_2: materials/ice_floor
+        Dependency_3: materials/light_smoke
     Info_173:
-      Name: effectprefabs/29_rfx_magic_icearea1.assetbundle
+      Name: effectprefabs/39_rfx_trajectory_electro1
       Dependencies:
-        Dependency_0: materials/ice_decal.assetbundle
-        Dependency_1: materials/ice_floor.assetbundle
-        Dependency_2: materials/light_add.assetbundle
-        Dependency_3: materials/light_smoke.assetbundle
+        Dependency_0: materials/blood_splat
+        Dependency_1: materials/electric_splat_hit
+        Dependency_2: materials/light
+        Dependency_3: materials/spark
+        Dependency_4: materials/trajectory_blur
+        Dependency_5: materials/trajectory_electro
     Info_174:
-      Name: effectprefabs/2_rfx_hitblood2.assetbundle
+      Name: effectprefabs/3_rfx_hitblood3
       Dependencies:
-        Dependency_0: materials/blood_splat.assetbundle
-        Dependency_1: materials/flame_splat_hit.assetbundle
-        Dependency_2: materials/light.assetbundle
-        Dependency_3: materials/spark.assetbundle
+        Dependency_0: materials/blood_splat
+        Dependency_1: materials/flamebomb_explosion
+        Dependency_2: materials/light
+        Dependency_3: materials/spark
     Info_175:
-      Name: effectprefabs/30_rfx_magic_lightteleport1.assetbundle
+      Name: effectprefabs/40_rfx_trajectory_flame1
       Dependencies:
-        Dependency_0: materials/broken_decal.assetbundle
-        Dependency_1: materials/fire_real.assetbundle
-        Dependency_2: materials/heal_decal.assetbundle
-        Dependency_3: materials/light_add.assetbundle
-        Dependency_4: materials/light_decal.assetbundle
-        Dependency_5: materials/pulse_smoke.assetbundle
-        Dependency_6: materials/spark.assetbundle
-        Dependency_7: materials/trajectory_blur.assetbundle
-        Dependency_8: materials/trajectory_electro.assetbundle
-        Dependency_9: materials/twinkle.assetbundle
+        Dependency_0: materials/blood_splat
+        Dependency_1: materials/fire01
+        Dependency_2: materials/light
+        Dependency_3: materials/spark
+        Dependency_4: materials/trajectory_blur
+        Dependency_5: materials/trajectory_flame
     Info_176:
-      Name: effectprefabs/31_rfx_magic_pulse1.assetbundle
+      Name: effectprefabs/41_rfx_magic_fxsword1
       Dependencies:
-        Dependency_0: materials/blackhole.assetbundle
-        Dependency_1: materials/ice_decal.assetbundle
-        Dependency_2: materials/light_add.assetbundle
-        Dependency_3: materials/light_decal.assetbundle
-        Dependency_4: materials/spark.assetbundle
-        Dependency_5: materials/twinkle.assetbundle
-        Dependency_6: materials/twirl.assetbundle
+        Dependency_0: materials/electric_splat_hit
+        Dependency_1: materials/light_add
+        Dependency_2: materials/sword
+        Dependency_3: materials/twinkle
+        Dependency_4: materials/twirl
     Info_177:
-      Name: effectprefabs/32_rfx_magic_rock1.assetbundle
+      Name: effectprefabs/4_rfx_hitblood4
       Dependencies:
-        Dependency_0: materials/broken_decal.assetbundle
-        Dependency_1: materials/electric_splat_hit.assetbundle
-        Dependency_2: materials/flamebomb_explosion.assetbundle
-        Dependency_3: materials/glacialwall_mesh.assetbundle
-        Dependency_4: materials/light_add.assetbundle
-        Dependency_5: materials/light_decal.assetbundle
-        Dependency_6: materials/smoke.assetbundle
-        Dependency_7: materials/spark_increase.assetbundle
-        Dependency_8: materials/stone_debris.assetbundle
+        Dependency_0: materials/blood_splat
+        Dependency_1: materials/fire01
+        Dependency_2: materials/light
+        Dependency_3: materials/spark
     Info_178:
-      Name: effectprefabs/33_rfx_muzzleflash1.assetbundle
+      Name: effectprefabs/5_rfx_hitblood5
       Dependencies:
-        Dependency_0: materials/flamebomb_explosion.assetbundle
-        Dependency_1: materials/flame_explosion_add.assetbundle
-        Dependency_2: materials/light_add.assetbundle
-        Dependency_3: materials/smoke.assetbundle
-        Dependency_4: materials/spark.assetbundle
-        Dependency_5: materials/stretch_hit01.assetbundle
+        Dependency_0: materials/blood_splat
+        Dependency_1: materials/flame_explosion
+        Dependency_2: materials/light
+        Dependency_3: materials/spark
     Info_179:
-      Name: effectprefabs/34_rfx_muzzleflash2.assetbundle
+      Name: effectprefabs/6_rfx_hitblood6
       Dependencies:
-        Dependency_0: materials/flame_explosion_add.assetbundle
-        Dependency_1: materials/light_add.assetbundle
-        Dependency_2: materials/smoke.assetbundle
-        Dependency_3: materials/spark.assetbundle
-        Dependency_4: materials/stretch_hit01.assetbundle
+        Dependency_0: materials/blood_splat
+        Dependency_1: materials/electric_splat_hit
+        Dependency_2: materials/light
+        Dependency_3: materials/spark
     Info_180:
-      Name: effectprefabs/35_rfx_muzzleflash3.assetbundle
+      Name: effectprefabs/7_rfx_hitsplat1
       Dependencies:
-        Dependency_0: materials/beam.assetbundle
-        Dependency_1: materials/circle2.assetbundle
-        Dependency_2: materials/flame_explosion_add.assetbundle
-        Dependency_3: materials/light_add.assetbundle
-        Dependency_4: materials/spark.assetbundle
-        Dependency_5: materials/trajectory_electro.assetbundle
+        Dependency_0: materials/broken_decal
+        Dependency_1: materials/fire_real
+        Dependency_2: materials/light_add
+        Dependency_3: materials/soft_smoke
+        Dependency_4: materials/spark
+        Dependency_5: materials/spark_increase
+        Dependency_6: materials/stone_debris
+        Dependency_7: materials/stretch_hit01
     Info_181:
-      Name: effectprefabs/36_rfx_nature_rain1.assetbundle
+      Name: effectprefabs/8_rfx_hitsplat2
       Dependencies:
-        Dependency_0: materials/circle.assetbundle
-        Dependency_1: materials/pulse_wave.assetbundle
-        Dependency_2: materials/ring.assetbundle
+        Dependency_0: materials/fire_real
+        Dependency_1: materials/ice_floor
+        Dependency_2: materials/light_add
+        Dependency_3: materials/light_smoke
+        Dependency_4: materials/soft_smoke
+        Dependency_5: materials/spark_increase
+        Dependency_6: materials/stone_debris
+        Dependency_7: materials/stretch_hit01
     Info_182:
-      Name: effectprefabs/37_rfx_nature_rain2.assetbundle
+      Name: effectprefabs/9_rfx_hitsplat3
       Dependencies:
-        Dependency_0: materials/circle.assetbundle
-        Dependency_1: materials/light.assetbundle
-        Dependency_2: materials/pulse_wave.assetbundle
-        Dependency_3: materials/water_splash.assetbundle
+        Dependency_0: materials/broken_decal
+        Dependency_1: materials/fire_real
+        Dependency_2: materials/light_add
+        Dependency_3: materials/soft_smoke
+        Dependency_4: materials/spark
+        Dependency_5: materials/spark_increase
+        Dependency_6: materials/stone_debris
+        Dependency_7: materials/stretch_hit01
     Info_183:
-      Name: effectprefabs/38_rfx_nature_snowyfield1.assetbundle
+      Name: modelprefabs/monster_1001
       Dependencies:
-        Dependency_0: materials/circle.assetbundle
-        Dependency_1: materials/ice_decal.assetbundle
-        Dependency_2: materials/ice_floor.assetbundle
-        Dependency_3: materials/light_smoke.assetbundle
+        Dependency_0: materials/terrain
     Info_184:
-      Name: effectprefabs/39_rfx_trajectory_electro1.assetbundle
+      Name: modelprefabs/monster_coco
       Dependencies:
-        Dependency_0: materials/blood_splat.assetbundle
-        Dependency_1: materials/electric_splat_hit.assetbundle
-        Dependency_2: materials/light.assetbundle
-        Dependency_3: materials/spark.assetbundle
-        Dependency_4: materials/trajectory_blur.assetbundle
-        Dependency_5: materials/trajectory_electro.assetbundle
+        Dependency_0: ac/monster_coco
+        Dependency_1: materials/monster_coco
     Info_185:
-      Name: effectprefabs/3_rfx_hitblood3.assetbundle
+      Name: modelprefabs/onehand
       Dependencies:
-        Dependency_0: materials/blood_splat.assetbundle
-        Dependency_1: materials/flamebomb_explosion.assetbundle
-        Dependency_2: materials/light.assetbundle
-        Dependency_3: materials/spark.assetbundle
+        Dependency_0: materials/ds_equipment_standard
+        Dependency_1: materials/ds_skeleton_standard
     Info_186:
-      Name: effectprefabs/40_rfx_trajectory_flame1.assetbundle
+      Name: modelprefabs/player_001
       Dependencies:
-        Dependency_0: materials/blood_splat.assetbundle
-        Dependency_1: materials/fire01.assetbundle
-        Dependency_2: materials/light.assetbundle
-        Dependency_3: materials/spark.assetbundle
-        Dependency_4: materials/trajectory_blur.assetbundle
-        Dependency_5: materials/trajectory_flame.assetbundle
+        Dependency_0: ac/player_001
+        Dependency_1: materials/ds_equipment_standard
+        Dependency_2: materials/ds_skeleton_standard
     Info_187:
-      Name: effectprefabs/41_rfx_magic_fxsword1.assetbundle
+      Name: modelprefabs/player_002
       Dependencies:
-        Dependency_0: materials/electric_splat_hit.assetbundle
-        Dependency_1: materials/light_add.assetbundle
-        Dependency_2: materials/sword.assetbundle
-        Dependency_3: materials/twinkle.assetbundle
-        Dependency_4: materials/twirl.assetbundle
+        Dependency_0: materials/ds_equipment_standard
+        Dependency_1: materials/ds_skeleton_standard
     Info_188:
-      Name: effectprefabs/4_rfx_hitblood4.assetbundle
+      Name: modelprefabs/player_002_hunter
       Dependencies:
-        Dependency_0: materials/blood_splat.assetbundle
-        Dependency_1: materials/fire01.assetbundle
-        Dependency_2: materials/light.assetbundle
-        Dependency_3: materials/spark.assetbundle
+        Dependency_0: materials/ds_equipment_standard
+        Dependency_1: materials/ds_skeleton_standard
     Info_189:
-      Name: effectprefabs/5_rfx_hitblood5.assetbundle
+      Name: modelprefabs/player_003
       Dependencies:
-        Dependency_0: materials/blood_splat.assetbundle
-        Dependency_1: materials/flame_explosion.assetbundle
-        Dependency_2: materials/light.assetbundle
-        Dependency_3: materials/spark.assetbundle
+        Dependency_0: materials/ds_equipment_standard
+        Dependency_1: materials/ds_skeleton_standard
     Info_190:
-      Name: effectprefabs/6_rfx_hitblood6.assetbundle
+      Name: modelprefabs/player_004
       Dependencies:
-        Dependency_0: materials/blood_splat.assetbundle
-        Dependency_1: materials/electric_splat_hit.assetbundle
-        Dependency_2: materials/light.assetbundle
-        Dependency_3: materials/spark.assetbundle
+        Dependency_0: materials/ds_equipment_standard
+        Dependency_1: materials/ds_skeleton_standard
     Info_191:
-      Name: effectprefabs/7_rfx_hitsplat1.assetbundle
+      Name: modelprefabs/player_005
       Dependencies:
-        Dependency_0: materials/broken_decal.assetbundle
-        Dependency_1: materials/fire_real.assetbundle
-        Dependency_2: materials/light_add.assetbundle
-        Dependency_3: materials/soft_smoke.assetbundle
-        Dependency_4: materials/spark.assetbundle
-        Dependency_5: materials/spark_increase.assetbundle
-        Dependency_6: materials/stone_debris.assetbundle
-        Dependency_7: materials/stretch_hit01.assetbundle
+        Dependency_0: materials/ds_equipment_standard
+        Dependency_1: materials/ds_skeleton_standard
     Info_192:
-      Name: effectprefabs/8_rfx_hitsplat2.assetbundle
-      Dependencies:
-        Dependency_0: materials/fire_real.assetbundle
-        Dependency_1: materials/ice_floor.assetbundle
-        Dependency_2: materials/light_add.assetbundle
-        Dependency_3: materials/light_smoke.assetbundle
-        Dependency_4: materials/soft_smoke.assetbundle
-        Dependency_5: materials/spark_increase.assetbundle
-        Dependency_6: materials/stone_debris.assetbundle
-        Dependency_7: materials/stretch_hit01.assetbundle
+      Name: modelprefabs/role_cap
+      Dependencies: {}
     Info_193:
-      Name: effectprefabs/9_rfx_hitsplat3.assetbundle
+      Name: modelprefabs/role_mimi
       Dependencies:
-        Dependency_0: materials/broken_decal.assetbundle
-        Dependency_1: materials/fire_real.assetbundle
-        Dependency_2: materials/light_add.assetbundle
-        Dependency_3: materials/soft_smoke.assetbundle
-        Dependency_4: materials/spark.assetbundle
-        Dependency_5: materials/spark_increase.assetbundle
-        Dependency_6: materials/stone_debris.assetbundle
-        Dependency_7: materials/stretch_hit01.assetbundle
+        Dependency_0: ac/role_mimi
+        Dependency_1: materials/role_mimi
     Info_194:
-      Name: ac/monster_coco.assetbundle
+      Name: uiprefabs/bottommidui
       Dependencies:
-        Dependency_0: animators/monster_coco/clip.assetbundle
+        Dependency_0: atlas/commonicons
+        Dependency_1: textures/b
+        Dependency_2: textures/o
+        Dependency_3: materials/uihp
+        Dependency_4: materials/uimp
     Info_195:
-      Name: animators/monster_coco/clip.assetbundle
-      Dependencies: {}
+      Name: uiprefabs/bottomskillui
+      Dependencies:
+        Dependency_0: atlas/commonicons
+        Dependency_1: atlas/playerskillicons
     Info_196:
-      Name: materials/monster_coco.assetbundle
+      Name: uiprefabs/facebookui
       Dependencies:
-        Dependency_0: textures/role_mimi.assetbundle
+        Dependency_0: atlas/skillicons
     Info_197:
-      Name: modelprefabs/monster_coco.assetbundle
+      Name: uiprefabs/guildui
       Dependencies:
-        Dependency_0: ac/monster_coco.assetbundle
-        Dependency_1: materials/monster_coco.assetbundle
+        Dependency_0: atlas/skillicons
     Info_198:
-      Name: roleclip/bulletmoving_long.assetbundle
-      Dependencies: {}
+      Name: uiprefabs/joystickui
+      Dependencies:
+        Dependency_0: atlas/skillicons
     Info_199:
-      Name: roleclip/bulletexp_001.assetbundle
-      Dependencies: {}
+      Name: uiprefabs/skillui
+      Dependencies:
+        Dependency_0: atlas/facebookicons
+        Dependency_1: atlas/skillicons
     Info_200:
-      Name: roleclip/bulletmoving_short.assetbundle
+      Name: uiprefabs/topleftui
       Dependencies: {}
+    Info_201:
+      Name: uiprefabs/updownanimui
+      Dependencies:
+        Dependency_0: atlas/facebookicons

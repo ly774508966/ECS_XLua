@@ -1,0 +1,45 @@
+ManifestFileVersion: 0
+CRC: 3994357784
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 46b7386f28aeda31f3d344564db3b575
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5815f1cda3de7f2a865b5afaf46e10d3
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5adaa9a4c3fdef840a58462d041416de, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 760e21c6793f79a4ea96b659e2823eb6, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Arts/Prefabs/EffectPrefabs/21_RFX_Spark2.prefab
+Dependencies:
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_add
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/soft_smoke
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/spark

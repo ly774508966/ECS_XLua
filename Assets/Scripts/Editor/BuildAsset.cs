@@ -139,11 +139,11 @@ public class BuildAsset
                         if (!isAll)
                         {
                             string bName = getBundleName(fils[i]);
-                            imp.assetBundleName =  bName.Replace(suff, ".assetbundle");
+                            imp.assetBundleName =  bName.Replace(suff, "");
                         }
                         else
                         {
-                            imp.assetBundleName = name + ".assetbundle";
+                            imp.assetBundleName = name;// name + ".assetbundle";
                         }
                     }
                 }

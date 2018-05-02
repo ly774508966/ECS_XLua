@@ -58,6 +58,7 @@ public class TBundle
     }
     public void addRefCount(int count = 1)
     {
+        useTime = TimerUtils.getSecTimer();
         RefCount = RefCount + count;
     }
 
@@ -70,10 +71,11 @@ public class TBundle
     {
         if (this.ab != null)
         {
-            ab.Unload(isUnloadAll);
+            bool unloadBool = RefCount <= 0;
+            ab.Unload(unloadBool);
             ab = null;
-            Debug.LogError("卸载AB: " + key);
-            Resources.UnloadUnusedAssets();
+            Debug.LogError("卸载AB: " + key + "<color=red>RefCount</color> " + RefCount);
+            //Resources.UnloadUnusedAssets();
         }
     }
 }
@@ -111,13 +113,13 @@ public class AssetMgr
         removeLst.Clear();
         while (ier.MoveNext())
         {
-            if (ier.Current.Value.AType == E_AssetType.Atlas)
-            {
+          //  if (ier.Current.Value.AType == E_AssetType.Atlas)
+           // {
                 if (!ier.Current.Value.isAlive())
                 {
                     removeLst.Add(ier.Current.Key);
                 }
-            }
+            //}
         }
         for (int i = 0; i < removeLst.Count; i++)
         {
@@ -129,10 +131,6 @@ public class AssetMgr
 
     private string getName(string name)
     {
-        if (name.EndsWith(".assetbundle"))
-        {
-            name = name.Replace(".assetbundle", "");
-        }
         return name.ToLower();
     }
     //是否包含bundle

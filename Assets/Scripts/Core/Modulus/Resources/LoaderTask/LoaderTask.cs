@@ -58,7 +58,7 @@ public class LoaderTask
     //www load
     IEnumerator wwwLoad()
     {
-        //Debug.Log("加载资源" + url);
+       // Debug.LogError("加载资源" + url);
         status = E_LoadStatus.Loading;
         if (string.IsNullOrEmpty(url))
         {
@@ -77,7 +77,7 @@ public class LoaderTask
         }
 
         //加载资源
-        AssetBundleCreateRequest abReq = AssetBundle.LoadFromFileAsync(Path.Combine(Application.dataPath, "Res/AssetBundle/" + url + ".assetbundle"));
+        AssetBundleCreateRequest abReq = AssetBundle.LoadFromFileAsync(Path.Combine(Application.dataPath, "Res/AssetBundle/" + url));
         do
         {
             if (abReq.assetBundle == null)

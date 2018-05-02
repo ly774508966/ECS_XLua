@@ -55,7 +55,7 @@ public class BasePool
         {
             loadHandler.Add(callBack);
             if (loadHandler.Count <= 1)
-                LoaderMgr.Instance.addTask(url, onLoaderFinish);
+                LoaderMgr.Instance.addTask(url, onLoaderFinish,this.depends);
         }
         else
         {

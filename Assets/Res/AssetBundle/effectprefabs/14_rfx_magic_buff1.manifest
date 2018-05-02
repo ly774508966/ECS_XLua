@@ -1,0 +1,50 @@
+ManifestFileVersion: 0
+CRC: 3980094457
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d504c69acf9ef8712e061b45c340a9b0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b1d8511fa6b0b97e3c747d2b073b1d5f
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 12
+  Script: {instanceID: 0}
+- Class: 15
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 26
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5adaa9a4c3fdef840a58462d041416de, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 760e21c6793f79a4ea96b659e2823eb6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f3be6197e56a23b40a90baf2a24d646a, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Arts/Prefabs/EffectPrefabs/14_RFX_Magic_Buff1.prefab
+Dependencies:
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/big_circle
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/ice_decal
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_add
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_decal
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/light_smoke
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/shield
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/shield_floor
+- F:/GithubPro/ECS_XLua/Assets/Res/AssetBundle/materials/twinkle
